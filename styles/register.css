@@ -1,0 +1,57 @@
+.form_login {
+  background-color: #8adee1;
+  padding: 20px 15px;
+  border-radius: 20px;
+}
+.lgin_img {
+  max-width: 250px;
+}
+
+.login_item {
+  margin: 15px 0;
+}
+.login_item > input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.login_title {
+  text-align: center;
+  color: var(--navy);
+}
+
+.login_item_checked {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_checkbox > input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
+.login_fogotPass > strong {
+  color: #1f6bb8;
+}
+.login_but {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  margin: 15px 0;
+  background-color: #1093b2;
+  font-size: 18px;
+  color: white;
+  border-radius: 3px;
+}
+
+.login_newUser {
+  text-align: center;
+}
+.login_newUser > strong {
+  color: #1f6bb8;
+}

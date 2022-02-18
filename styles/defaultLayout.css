@@ -1,0 +1,31 @@
+.def_menu {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.def_logo_img {
+  width: 100%;
+  max-width: 250px;
+}
+.def_menu_right>ul{
+  display: flex;
+  align-items: center;
+}
+
+.def_menu_item{
+  margin-right: 25px;
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.def_menu_item:hover{
+  color:var(--orange);
+}
+
+.def_menu_img_th{
+  width: 20px;
+  vertical-align: middle;
+}
