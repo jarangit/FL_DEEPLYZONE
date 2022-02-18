@@ -1,5 +1,7 @@
 import Head from "next/head";
+import Forgot from "../conponents/forms/register/Forgot";
 import Login from "../conponents/forms/register/Login";
+import Signup from "../conponents/forms/register/Signup";
 export default function Home() {
   return (
     <div>
@@ -19,6 +21,8 @@ export default function Home() {
         </div>
         <div className="index_right">
           <Login/>
+          {/* <Forgot/> */}
+          {/* <Signup/> */}
         </div>
       </div>
     </div>

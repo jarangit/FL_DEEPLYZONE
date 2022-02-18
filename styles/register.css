@@ -3,13 +3,18 @@
   padding: 20px 15px;
   border-radius: 20px;
   margin-top: 20px;
+  max-width: 400px;
 }
-.lgin_img {
-  max-width: 250px;
+.login_box_img{
+  text-align: center;
+}
+.login_img {
+  width: 100%;
+  max-width: 300px;
 }
 
 .login_item {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 .login_item > input {
   width: 100%;
@@ -19,15 +24,26 @@
   background-color: white;
   border-radius: 3px;
   font-size: 18px;
+  margin-top: 5px;
+}
+.login_item > label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--navy);
+}
+.login_item > input::placeholder {
+  color: rgb(196, 196, 196);
 }
 .login_title {
   text-align: center;
   color: var(--navy);
+  font-size: 24px;
 }
 
 .login_item_checked {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .login_checkbox > input {
@@ -55,4 +71,41 @@
 }
 .login_newUser > strong {
   color: #1f6bb8;
+}
+
+/* SELECT */
+.select_socail {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.login_item_select{
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 18px;
+  position: relative;
+  margin-top: 15px;
+
+}
+.login_item_select::before {
+  content: '\25BC';
+  position: absolute;
+  top: 54%;
+  right: 10px;
+  color: rgb(170, 170, 170);
+  cursor: pointer;
+}
+
+.login_checkbox_agree>label{
+  color: rgb(79, 79, 255);
+}
+.login_checkbox_agree>label>span{
+  color: black;
 }

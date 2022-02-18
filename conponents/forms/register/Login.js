@@ -4,11 +4,11 @@ const Login = () => {
   return (
     <div>
       <form className="form_login">
-        <div className="login_item">
+        <div className="login_box_img">
           <img
             src="https://i.ibb.co/6RKKJzG/LOGO-Deeply-zone-white.png"
             alt=""
-            className="lgin_img"
+            className="login_img"
           />
         </div>
         <div className="login_item">

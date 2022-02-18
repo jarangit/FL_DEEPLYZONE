@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: 'Prompt', sans-serif;
 }
-button, input {
+button, input, option, select {
   font-family: 'Prompt', sans-serif;
 }
 a {
