@@ -5,6 +5,11 @@ import {
   faUserCircle,
   faCog,
   faCaretDown,
+  faCircle,
+  faLink,
+  faUser,
+  faSignOut,
+  faPlusCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
@@ -62,6 +67,37 @@ const AdminMenu = () => {
                 <FontAwesomeIcon icon={faBell} size="lg" color="#ffffff" />
               </a>
             </Link>
+            <ul className="admin_menu_dropdown">
+              <div>Notifications</div>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon icon={faCircle} className="dropdown_item_icon"/>
+                </span>
+                item
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon icon={faCircle} className="dropdown_item_icon"/>
+                </span>
+                item
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon icon={faCircle} className="dropdown_item_icon"/>
+                </span>
+                item
+              </li>
+
+              <div
+                style={{
+                  fontSize: "12px",
+                  textAlign: "center",
+                  color: "orange",
+                }}
+              >
+                การแจ้งเดือนทั้งหมด
+              </div>
+            </ul>
           </li>
           <li className="admin_menu_item">
             <Link href={"#"}>
@@ -75,6 +111,36 @@ const AdminMenu = () => {
                 <FontAwesomeIcon icon={faCaretDown} size="lg" color="#ffffff" />
               </a>
             </Link>
+            <ul className="admin_menu_dropdown">
+              <div>สลับร้านค้า</div>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="dropdown_item_icon"
+                  />
+                </span>
+                Store 1
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="dropdown_item_icon"
+                  />
+                </span>
+                Store 1
+              </li>
+              <div>
+                <span>
+                  <FontAwesomeIcon
+                    icon={faPlusCircle}
+                    className="dropdown_item_icon"
+                  />
+                </span>
+                เพิ่มร้านค้า
+              </div>
+            </ul>
           </li>
           <li className="admin_menu_item">
             <Link href={"#"}>
@@ -93,6 +159,37 @@ const AdminMenu = () => {
                 <FontAwesomeIcon icon={faCog} size="lg" color="#ffffff" />
               </a>
             </Link>
+
+            <ul className="admin_menu_dropdown">
+              <div>ตั้งค่า</div>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faLink}
+                    className="dropdown_item_icon"
+                  />
+                </span>
+                การเตื่อมต่อ
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    className="dropdown_item_icon"
+                  />
+                </span>
+                บัญชีของฉัน
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <span>
+                  <FontAwesomeIcon
+                    icon={faSignOut}
+                    className="dropdown_item_icon"
+                  />
+                </span>
+                ออกจากระบบ
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
