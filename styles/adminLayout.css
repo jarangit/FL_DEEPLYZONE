@@ -91,20 +91,54 @@
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  position: relative;
 }
-.sideBar_menu_item > a {
+.sideBar_icon_item {
+  padding: 0 3px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: var(--blue);
+}
+.sideBar_menu_item > a > p {
   width: 100%;
+  padding-left: 10px;
 }
 .sideBar_menu_item:hover {
   background-color: var(--orange);
   color: white;
 }
-
-.sideBar_productBoost {
-  border-radius: 5px;
+.sideBar_menu_item:hover .sideBar_icon_item{
+  color: white;
+}
+.sideBar_menu_item:hover .sideBar_sku{
+  background-color: white;
+  color: var(--orange);
 }
 .sideBar_sku {
   width: 100%;
 
   border-radius: 5px;
+}
+
+/* Before item of menu */
+.product_booster::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\10f007";
+  position: absolute;
+  left: 2px;
+}
+
+.sideBar_sku {
+  background-color: var(--blue);
+  position: absolute;
+  left: 5px;
+  width: 30px;
+  font-size: 10px;
+  color: white;
+  /* height: 100%; */
+  text-align: center;
+  align-items: center;
+  top: 5px;
 }
