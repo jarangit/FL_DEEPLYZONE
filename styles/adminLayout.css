@@ -1,0 +1,110 @@
+.admin_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 10px;
+  position: sticky;
+  width: 100%;
+  z-index: 100;
+  height: 50px;
+}
+
+.admin_menu_left {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+.admin_menu_box_left_item > ul {
+  padding: 0;
+  display: flex;
+}
+.admin_box_log {
+  width: 200px;
+  margin-right: 20px;
+}
+.admin_logo_img {
+  width: 100%;
+}
+
+.admin_menu_right > ul {
+  display: flex;
+}
+
+.admin_menu_item {
+  margin-right: 20px;
+  color: white;
+}
+.admin_menu_left_item {
+  margin-right: 20px;
+  color: white;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+
+.admin_meni_userName {
+  color: white;
+  margin: 10px;
+}
+.admin_menu_left_item:hover,
+.admin_menu_left_item.active {
+  border-bottom: 3px solid var(--orange);
+}
+
+/* SIDEBAR */
+
+.sideBar {
+  height: calc(100vh);
+  background-color: var(--blue);
+  position: sticky;
+  top: 50px;
+}
+
+.sideBar_box {
+  max-width: 40px;
+  padding: 20px 10px;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+.sideBar_box.active {
+  min-width: 180px;
+  max-width: 200px;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+.sideBar_box.active .sideBar_menu_item {
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.sideBar_menu > ul {
+  padding: 0;
+  margin: 0;
+}
+.sideBar_menu_item {
+  transition: all 0.2s;
+  width: 0%;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: white;
+  padding: 0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.sideBar_menu_item > a {
+  width: 100%;
+}
+.sideBar_menu_item:hover {
+  background-color: var(--orange);
+  color: white;
+}
+
+.sideBar_productBoost {
+  border-radius: 5px;
+}
+.sideBar_sku {
+  width: 100%;
+
+  border-radius: 5px;
+}

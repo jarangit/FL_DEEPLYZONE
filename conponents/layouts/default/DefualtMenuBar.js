@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 const DefualtMenuBar = () => {
   const [active, setactive] = useState(false);
   const router = useRouter();
-  console.log(router);
 
   return (
     <div className="def_menu">

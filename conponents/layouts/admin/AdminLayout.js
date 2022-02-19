@@ -1,9 +1,11 @@
 import React from "react";
+import AdminMenu from "./AdminMenu";
+import SideBar from "./SideBar";
 const AdminLayout = ({ children }) => {
   return (
     <div>
-      <div className="admin_menu">admin menu</div>
-      <div>{children}</div>
+      <AdminMenu /> 
+      <div style={{flex: "4",}} >{children}</div>
     </div>
   );
 };
