@@ -12,14 +12,14 @@ const FeaturePage = () => {
       name: "Product Booster",
       link: "product",
       class_sty: [
-        <FontAwesomeIcon icon={faBoltLightning} className="sideBar_icon_item" />,
+        <FontAwesomeIcon key = {"faBoltLightning"} icon={faBoltLightning} className="sideBar_icon_item" />,
       ],
       sub: [],
     },
     {
       name: "Taking Sales",
       link: "sales",
-      class_sty: [<span className="sideBar_sku">SKU</span>],
+      class_sty: [<span key = {"sideBar_sku"} className="sideBar_sku">SKU</span>],
       sub: [],
     },
   ];

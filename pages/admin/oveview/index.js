@@ -8,7 +8,7 @@ const OveviewPage = () => {
       name: "รายงาน",
       link: "report",
       class_sty: [
-        <FontAwesomeIcon icon={faClock} className="sideBar_icon_item" />,
+        <FontAwesomeIcon  key = {"faClock_sideBar_icon_item"} icon={faClock} className="sideBar_icon_item" />,
       ],
       sub: [
         {
