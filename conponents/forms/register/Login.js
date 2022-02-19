@@ -1,6 +1,7 @@
 import React from "react";
+import Link from "next/link";
 
-const Login = () => {
+const LoginForm = () => {
   return (
     <div>
       <form className="form_login">
@@ -15,7 +16,7 @@ const Login = () => {
           <h3 className="login_title">เข้าสู่ระบบ</h3>
         </div>
         <div className="login_item">
-          <input type="text" placeholder="ซื่อผู้ใช้" />
+          <input type="email" placeholder="ซื่อผู้ใช้" />
         </div>
         <div className="login_item">
           <input type="password" placeholder="รหัสผ่าน" />
@@ -27,7 +28,9 @@ const Login = () => {
           </div>
           <div className="login_fogotPass">
             <strong>
-              <a href="#">ลืมรหัสผ่าน</a>
+            <Link href="/register/forgot">
+              <a>ลืมรหัสผ่าน</a>
+            </Link>
             </strong>
           </div>
         </div>
@@ -45,4 +48,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginForm;

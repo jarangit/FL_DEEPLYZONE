@@ -1,14 +1,24 @@
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const DefualtMenuBar = () => {
+  const [active, setactive] = useState(false);
+  const router = useRouter();
+  console.log(router);
+
   return (
     <div className="def_menu">
       <div className="def_log">
-        <img
-          src="https://i.ibb.co/NjMzVRF/LOGO-Deeply-zone.png"
-          alt=""
-          className="def_logo_img"
-        />
+        <Link href={"/"}>
+          <a>
+            <img
+              src="https://i.ibb.co/NjMzVRF/LOGO-Deeply-zone.png"
+              alt=""
+              className="def_logo_img"
+            />
+          </a>
+        </Link>
       </div>
 
       <div className="def_menu_right">
@@ -39,11 +49,23 @@ const DefualtMenuBar = () => {
               className="def_menu_img_th"
             />
           </li>
-          <li className="def_menu_item active">
-            <a href="#">เข้าสู่ระบบ</a>
+          <li
+            className={`def_menu_item ${
+              router.pathname === "/register/login" ? "active" : ""
+            }`}
+          >
+            <Link href="/register/login">
+              <a>ลงชื่อเข้าใช้</a>
+            </Link>
           </li>
-          <li className="def_menu_item">
-            <a href="#">ลงชื่อเข้าใช้</a>
+          <li
+            className={`def_menu_item ${
+              router.pathname === "/register/signup" ? "active" : ""
+            }`}
+          >
+            <Link href="/register/signup">
+              <a onClick={() => setactive(!active)}>ลงชื่อเข้าใช้</a>
+            </Link>
           </li>
         </ul>
       </div>

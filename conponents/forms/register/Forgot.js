@@ -1,6 +1,6 @@
 import React from "react";
 
-const Forgot = () => {
+const ForgotForm = () => {
   return (
     <div>
       <form className="form_login">
@@ -24,4 +24,4 @@ const Forgot = () => {
   );
 };
 
-export default Forgot;
+export default ForgotForm;
