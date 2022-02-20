@@ -3,6 +3,8 @@ import "../styles/globals.css";
 import "../styles/adminLayout.css"
 import "../styles/defaultLayout.css"
 import "../styles/register.css"
+import "../styles/shop.css"
+
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 
 function MyApp({ Component, pageProps }) {
