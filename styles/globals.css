@@ -74,3 +74,11 @@ li {
 
 
 
+.jr_but_blue{
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}

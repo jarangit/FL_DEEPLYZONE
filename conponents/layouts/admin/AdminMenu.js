@@ -71,19 +71,28 @@ const AdminMenu = () => {
               <div>Notifications</div>
               <li className="admin_menu_dropdown_item">
                 <span>
-                  <FontAwesomeIcon icon={faCircle} className="dropdown_item_icon"/>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="dropdown_item_icon"
+                  />
                 </span>
                 item
               </li>
               <li className="admin_menu_dropdown_item">
                 <span>
-                  <FontAwesomeIcon icon={faCircle} className="dropdown_item_icon"/>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="dropdown_item_icon"
+                  />
                 </span>
                 item
               </li>
               <li className="admin_menu_dropdown_item">
                 <span>
-                  <FontAwesomeIcon icon={faCircle} className="dropdown_item_icon"/>
+                  <FontAwesomeIcon
+                    icon={faCircle}
+                    className="dropdown_item_icon"
+                  />
                 </span>
                 item
               </li>
@@ -163,13 +172,17 @@ const AdminMenu = () => {
             <ul className="admin_menu_dropdown">
               <div>ตั้งค่า</div>
               <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faLink}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                การเตื่อมต่อ
+                <Link href={"/admin/connect"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faLink}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    การเตื่อมต่อ
+                  </a>
+                </Link>
               </li>
               <li className="admin_menu_dropdown_item">
                 <span>

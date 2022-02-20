@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { faTrashAlt, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ModalDelete from "./ModalDelete";
 const ShopList = () => {
+  const [open, setopen] = useState(false);
   const data_shop = [
     {
       name: "Deeply 01",
@@ -22,7 +24,7 @@ const ShopList = () => {
               <p>Package:</p>
               <p>Date:</p>
             </div>
-            <button className="shop_del_but">
+            <button className="shop_del_but" onClick={() => setopen(!open)} >
               <span style={{ marginRight: "5px" }}>
                 <FontAwesomeIcon icon={faTrashAlt} />
               </span>
@@ -32,12 +34,13 @@ const ShopList = () => {
         ))}
         <div
           className="shop_list_item"
-          style={{ textAlign: "center", cursor: "pointer"}}
+          style={{ textAlign: "center", cursor: "pointer" }}
         >
           <FontAwesomeIcon icon={faPlus} size="6x" color="#00C3CB" />
           <div>เพิ่มสินค้าของคุณ</div>
         </div>
       </div>
+      {open && <ModalDelete  setopen = {setopen}/>}
     </div>
   );
 };

@@ -5,6 +5,8 @@ import "../styles/defaultLayout.css"
 import "../styles/register.css"
 import "../styles/shop.css"
 import "../styles/news.css"
+import "../styles/modal.css"
+import "../styles/connect.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 
