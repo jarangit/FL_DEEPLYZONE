@@ -1,0 +1,37 @@
+.news_list{
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.news_item{
+  width: 250px;
+  margin-right: 20px;
+
+}
+
+.news_item_img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* NEWS POP */
+.news_pop{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+
+}
+.new_pop_box_img{
+  width: 50%;
+}
+.news_pop_img{
+  width: 100%;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.news_pop_content{
+  width: 50%;
+  padding: 20px;
+}

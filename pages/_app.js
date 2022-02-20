@@ -4,6 +4,7 @@ import "../styles/adminLayout.css"
 import "../styles/defaultLayout.css"
 import "../styles/register.css"
 import "../styles/shop.css"
+import "../styles/news.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 
