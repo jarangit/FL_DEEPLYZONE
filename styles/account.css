@@ -1,5 +1,5 @@
 .account {
-  padding: 20px;
+  width: 100%;
 }
 
 .account_box_title {
@@ -13,7 +13,7 @@
 .account_box_grid {
   margin-left: 50px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   gap: 30px;
   align-items: center;
 }
@@ -30,6 +30,8 @@
 
 .account_user_data_item {
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 .account_icon_title_store::after {
   font-family: "Font Awesome 5 Free";

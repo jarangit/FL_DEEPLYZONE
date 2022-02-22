@@ -5,10 +5,10 @@ import {
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
+// import Link from "next/link";
+import Link from '../../custormLink/custormLink'
 const SideBar = ({ data }) => {
   const [open, setopen] = useState(false);
-  console.log(data);
   return (
     <div className="sideBar">
       <div className={`sideBar_box ${open ? "active" : ""}`}>
@@ -27,7 +27,7 @@ const SideBar = ({ data }) => {
               data.map((item, key) => (
                 <React.Fragment key={key}>
                   <li className="sideBar_menu_item">
-                    <Link href={"/admin/product"}>
+                    <Link href={item.link}>
                       <a>
                         <span>
                         {item.class_sty}

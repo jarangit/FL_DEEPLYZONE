@@ -23,11 +23,11 @@ const DefualtMenuBar = () => {
       <div className="def_menu_right">
         <ul>
           <li className="def_menu_item">
-            <a href="#">ฟีเจอร์</a>
+            <a href="/">ฟีเจอร์</a>
             <div className="def_dropdown">
               <ul>
                 <li >
-                  <a className="def_dropdown_item" href="#">Product Boosting</a>
+                  <a className="def_dropdown_item" href="/">Product Boosting</a>
                 </li>
                 <li className="def_dropdown_item">Neighbor Tracking</li>
                 <li className="def_dropdown_item">Data Analysis</li>
@@ -35,13 +35,13 @@ const DefualtMenuBar = () => {
             </div>
           </li>
           <li className="def_menu_item">
-            <a href="#">แพ็คเกจ</a>
+            <a href="/">แพ็คเกจ</a>
           </li>
           <li className="def_menu_item">
-            <a href="#">เกี่ยวกับเรา</a>
+            <a href="/">เกี่ยวกับเรา</a>
           </li>
           <li className="def_menu_item">
-            <a href="#">ติดต่อเรา</a>
+            <a href="/">ติดต่อเรา</a>
           </li>
           <li className="def_menu_item">
             <img

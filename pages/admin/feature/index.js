@@ -10,7 +10,7 @@ const FeaturePage = () => {
   const menu_items = [
     {
       name: "Product Booster",
-      link: "product",
+      link: "/admin/feature/product_booster",
       class_sty: [
         <FontAwesomeIcon key = {"faBoltLightning"} icon={faBoltLightning} className="sideBar_icon_item" />,
       ],
@@ -25,7 +25,6 @@ const FeaturePage = () => {
   ];
   return (
     <div style={{ display: "flex", narginTop: "76px" }}>
-      <SideBar data={menu_items} />
       <div className="admin_page">Feature mune</div>
     </div>
   );

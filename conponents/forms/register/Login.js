@@ -40,7 +40,7 @@ const LoginForm = () => {
         <div className="login_newUser">
           <div>เพิ่งเคยใช้งาน Deeply</div>
           <strong>
-            <a href="#">สมัครใหม่</a>
+            <a href="/">สมัครใหม่</a>
           </strong>
         </div>
       </form>

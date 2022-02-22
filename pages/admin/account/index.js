@@ -5,6 +5,7 @@ import {
   faEnvelope,
   faLock,
   faStoreAlt,
+  faCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -37,7 +38,7 @@ const Account_page = () => {
           <div className="account_icon_title">เบอร์โทรศัพท์</div>
         </div>
         <div className="account_grid_item">
-          <div className="account_user_data_item">Deeply_SHS</div>
+          <div className="account_user_data_item">088-88-8888</div>
         </div>
         <div className="account_grid_item">
           <button className="jr_but_gray">แก้ไข</button>
@@ -50,7 +51,7 @@ const Account_page = () => {
           <div className="account_icon_title">E-mail</div>
         </div>
         <div className="account_grid_item">
-          <div className="account_user_data_item">Deeply_SHS</div>
+          <div className="account_user_data_item">test@gmail.com</div>
         </div>
         <div className="account_grid_item">
           <button className="jr_but_gray">แก้ไข</button>
@@ -63,7 +64,7 @@ const Account_page = () => {
           <div className="account_icon_title">รหัสผ่าน</div>
         </div>
         <div className="account_grid_item">
-          <div className="account_user_data_item">Deeply_SHS</div>
+          <div className="account_user_data_item">**********</div>
         </div>
         <div className="account_grid_item">
           <button className="jr_but_gray">แก้ไข</button>
@@ -80,7 +81,12 @@ const Account_page = () => {
           <div className="account_icon_title_store">เพิ่มร้านค้า</div>
         </div>
         <div className="account_grid_item">
-          <div className="account_user_data_item">Deeply_SHS</div>
+          <div className="account_user_data_item">
+            <span className="account_icon">
+              <FontAwesomeIcon icon={faCircle} size="2x" color="#1093B2" />
+            </span>
+            Store 1
+          </div>
         </div>
         <div className="account_grid_item">
           <button className="jr_but_gray">แก้ไข</button>
@@ -89,7 +95,12 @@ const Account_page = () => {
           <div className="jr_but_blue">+ เพิ่มร้านค้า </div>
         </div>
         <div className="account_grid_item">
-          <div className="account_user_data_item">Deeply_SHS</div>
+          <div className="account_user_data_item">
+            <span className="account_icon">
+              <FontAwesomeIcon icon={faCircle} size="2x" color="#1093B2" />
+            </span>
+            Store 2
+          </div>
         </div>
         <div className="account_grid_item">
           <button className="jr_but_gray">แก้ไข</button>

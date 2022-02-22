@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import {
   faBell,
@@ -13,6 +12,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
+import A from "../../custormLink/Atag";
+// import Link from "next/link";
+import Link from "../../custormLink/custormLink";
 const AdminMenu = () => {
   const router = useRouter();
 
@@ -28,31 +30,19 @@ const AdminMenu = () => {
         </div>
         <div className="admin_menu_box_left_item">
           <ul>
-            <li
-              className={`admin_menu_left_item ${
-                router.pathname === "/admin" ? "active" : ""
-              }`}
-            >
+            <li>
               <Link href={"/admin"}>
-                <a>DeeplyZone</a>
+                <A>DeeplyZone</A>
               </Link>
             </li>
-            <li
-              className={`admin_menu_left_item ${
-                router.pathname === "/admin/feature" ? "active" : ""
-              }`}
-            >
+            <li>
               <Link href={"/admin/feature"}>
-                <a>Feature</a>
+                <A>Feature</A>
               </Link>
             </li>
-            <li
-              className={`admin_menu_left_item ${
-                router.pathname === "/admin/oveview" ? "active" : ""
-              }`}
-            >
-              <Link href={"/admin/oveview"}>
-                <a>ภาพรวม</a>
+            <li>
+              <Link href={"/admin/overview"}>
+                <A>ภาพรวม</A>
               </Link>
             </li>
           </ul>
@@ -109,7 +99,7 @@ const AdminMenu = () => {
             </ul>
           </li>
           <li className="admin_menu_item">
-            <Link href={"#"}>
+            <Link href={"/admin"}>
               <a>
                 <FontAwesomeIcon
                   icon={faUserCircle}

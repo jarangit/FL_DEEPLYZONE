@@ -67,6 +67,7 @@
   color: white;
   display: block;
   border-bottom: 2px solid transparent;
+  cursor: pointer;
 }
 
 .admin_meni_userName {

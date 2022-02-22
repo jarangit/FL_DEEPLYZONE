@@ -36,7 +36,6 @@ const OveviewPage = () => {
   ];
   return (
     <div style={{ display: "flex", narginTop: "76px" }}>
-      <SideBar data={menu_items} />
       <div className="admin_page">Oveview page</div>
     </div>
   );

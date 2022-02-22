@@ -6,11 +6,10 @@ import Slideshow from "../../conponents/layouts/admin/slideBanner/SlideBanner";
 const AdminIndex = () => {
   return (
     <div style={{ display: "flex", narginTop: "76px" }}>
-      <SideBar />
       <div className="admin_page">
         <Slideshow />
         <ShopList />
-        <NewList/>
+        <NewList />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const ShopList = () => {
       <h2 className="shop_list_title">ร้านค้าของคุณ</h2>
       <div className="shop_list_box">
         {data_shop.map((item, key) => (
-          <div className="shop_list_item">
+          <div className="shop_list_item" key ={key}>
             <img src={item.img} alt="" className="shop_img" />
             <div className="shop_item_title">{item.name}</div>
             <div className="shop_item_detail">
