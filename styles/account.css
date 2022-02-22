@@ -1,0 +1,47 @@
+.account {
+  padding: 20px;
+}
+
+.account_box_title {
+  margin-bottom: 20px;
+}
+
+.account_box_title > p {
+  font-size: 20px;
+}
+
+.account_box_grid {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.account_grid_item {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  position: relative;
+}
+.account_icon {
+  margin-right: 20px;
+}
+
+.account_user_data_item {
+  font-weight: 600;
+}
+.account_icon_title_store::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\2b";
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  color: #1093b2;
+  font-size: 24px;
+  z-index: 3;
+}
+.account_icon_store {
+  position: relative;
+}

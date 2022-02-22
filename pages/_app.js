@@ -7,6 +7,7 @@ import "../styles/shop.css"
 import "../styles/news.css"
 import "../styles/modal.css"
 import "../styles/connect.css"
+import "../styles/account.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 

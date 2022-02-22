@@ -185,13 +185,17 @@ const AdminMenu = () => {
                 </Link>
               </li>
               <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faUser}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                บัญชีของฉัน
+                <Link href={"/admin/account"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faUser}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    บัญชีของฉัน
+                  </a>
+                </Link>
               </li>
               <li className="admin_menu_dropdown_item">
                 <span>

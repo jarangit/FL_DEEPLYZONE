@@ -76,11 +76,15 @@ li {
 
 .jr_but_blue {
   border: none;
-  background-color: var(--blue);
+  background-color: #1093B2;
   color: white;
   padding: 5px 20px;
   border-radius: 8px;
   cursor: pointer;
+}
+.jr_but_gray{
+  border: none;
+  padding: 5px 20px;
 }
 
 /* INPUT ICON TOGGLE BUTTON */
