@@ -10,7 +10,7 @@ const Slideshow = () => {
   return (
     <div>
       <img
-        style={{ width: "100%", borderRadius: "20px" ,}}
+        style={{ width: "100%", borderRadius: "5px" ,}}
         src="https://img.freepik.com/free-vector/online-shopping-banner-with-3d-shopping-cart-clouds-social-icons-vector-illustration_548887-100.jpg?w=996"
         alt=""
       />

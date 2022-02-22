@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "../../custormLink/custormLink";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -26,7 +26,9 @@ const DefualtMenuBar = () => {
             <a href="#">ฟีเจอร์</a>
             <div className="def_dropdown">
               <ul>
-                <li className="def_dropdown_item">Product Boosting</li>
+                <li >
+                  <a className="def_dropdown_item" href="#">Product Boosting</a>
+                </li>
                 <li className="def_dropdown_item">Neighbor Tracking</li>
                 <li className="def_dropdown_item">Data Analysis</li>
               </ul>
@@ -48,22 +50,14 @@ const DefualtMenuBar = () => {
               className="def_menu_img_th"
             />
           </li>
-          <li
-            className={`def_menu_item ${
-              router.pathname === "/register/login" ? "active" : ""
-            }`}
-          >
+          <li className="def_menu_item">
             <Link href="/register/login">
-              <a>ลงชื่อเข้าใช้</a>
+              <a  className="def_menu_item_limk">ลงชื่อเข้าใช้</a>
             </Link>
           </li>
-          <li
-            className={`def_menu_item ${
-              router.pathname === "/register/signup" ? "active" : ""
-            }`}
-          >
+          <li className="def_menu_item">
             <Link href="/register/signup">
-              <a onClick={() => setactive(!active)}>ลงชื่อเข้าใช้</a>
+              <a className="def_menu_item_limk" >ลงชื่อเข้าใช้</a>
             </Link>
           </li>
         </ul>

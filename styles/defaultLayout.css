@@ -49,7 +49,7 @@
   border-bottom: 1px solid rgb(192, 192, 192);
 }
 
-.def_menu_item.active, .def_menu_item:hover > a {
+.def_menu_item_limk.active, .def_menu_item:hover > a {
   color: var(--orange);
 }
 .def_menu_item:hover .def_dropdown {
