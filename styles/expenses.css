@@ -1,0 +1,33 @@
+.expenses_table > tr>th {
+  background-color: var(--blue);
+}
+.expenses_table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+}
+.expenses_table > tr:first-child {
+  background-color: var(--blue);
+}
+.expenses_table > tr > th:first-child {
+  border-radius: 15px 0px 0px 15px;
+}
+.expenses_table > tr > th:last-child {
+  border-radius: 0 15px 15px 0;
+}
+
+.expenses_table > tr > th {
+  background-color: var(--blue);
+  padding: 10px 0;
+  border: none;
+  color: white;
+  text-align: center;
+  min-width: 100px;
+}
+.expenses_table > tr > td {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--lightGray);
+  position: relative;
+}
