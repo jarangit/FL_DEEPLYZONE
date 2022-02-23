@@ -76,7 +76,7 @@ li {
 
 .jr_but_blue {
   border: none;
-  background-color: #1093B2;
+  background-color: var(--blue);
   color: white;
   padding: 5px 20px;
   border-radius: 8px;

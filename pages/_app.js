@@ -8,6 +8,7 @@ import "../styles/news.css"
 import "../styles/modal.css"
 import "../styles/connect.css"
 import "../styles/account.css"
+import "../styles/product_booster.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 
