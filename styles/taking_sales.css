@@ -1,0 +1,108 @@
+.taking_box_title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.taking_box_title_L>h1{
+  font-weight: 200;
+}
+
+.taking_box_title_R{
+  display: flex;
+  align-items: center;
+}
+.taking_box_title_R>input{
+  margin-left: 20px;
+}
+
+/* BOX ADD SKU */
+.taking_box_add_sku{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.taking_box_add_sku>input{
+  background-color: var(--lightGray);
+  border: none;
+  padding: 8px 10px;
+  width: 70%;
+}
+
+.taking_box_filter{
+  margin-top: 20px;
+}
+.taking_box_filter>ul{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+}
+
+.taking_filter_item>label>span{
+  margin-left: 5px;
+}
+/* BUTTON ADVANCE */
+.taking_filter_but_advance{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.taking_filter_but_advance>span{
+  margin-right: 5px;
+}
+/* BOX TABELE */
+
+
+.taking_filter_table {
+  width: 100%;
+  border-collapse:collapse;
+
+}
+.taking_filter_table > tr:first-child {
+  background-color: var(--blue);
+}
+.taking_filter_table > tr > th:first-child{
+  border-radius: 15px 0px 0px 15px;
+}
+.taking_filter_table > tr > th:last-child{
+  border-radius: 0 15px 15px 0;
+}
+
+.taking_filter_table > tr > th {
+  background-color: var(--blue);
+  padding: 10px 0;
+  border: none;
+  color: white;
+  text-align: center;
+
+}
+.taking_filter_table > tr > td {
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 1PX solid var(--lightGray);
+  position: relative;
+  
+}
+
+.price_change{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.taking_table_review{
+  display: flex;
+  gap: 5px;
+}
+.taking_table_status{
+  color: rgb(4, 214, 4);
+}
+.taking_table_status>div>button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}

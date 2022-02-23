@@ -5,6 +5,7 @@
   --blue: #00c3cb;
   --orange: #f28f0b;
   --navy: #31356e;
+  --lightGray: #ededed;
 }
 
 html,
@@ -19,6 +20,9 @@ option,
 select,
 table {
   font-family: "Prompt", sans-serif;
+}
+textarea:focus, input:focus{
+  outline: none;
 }
 a {
   color: inherit;
@@ -45,7 +49,7 @@ li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -79,12 +83,13 @@ li {
   background-color: var(--blue);
   color: white;
   padding: 5px 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .jr_but_gray{
   border: none;
   padding: 5px 20px;
+  border-radius: 5px;
 }
 
 /* INPUT ICON TOGGLE BUTTON */

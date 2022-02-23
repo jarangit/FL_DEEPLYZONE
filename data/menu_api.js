@@ -6,7 +6,7 @@ export const menu_admin_feature = [
   },
   {
     name: "Taking Sales",
-    link: "sales",
+    link: "/admin/feature/taking_sales",
     sub: [],
   },
 ];

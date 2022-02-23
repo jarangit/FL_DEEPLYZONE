@@ -9,6 +9,7 @@ import "../styles/modal.css"
 import "../styles/connect.css"
 import "../styles/account.css"
 import "../styles/product_booster.css"
+import "../styles/taking_sales.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 
