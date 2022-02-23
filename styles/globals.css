@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
 :root {
@@ -90,6 +90,8 @@ li {
   border: none;
   padding: 5px 20px;
   border-radius: 5px;
+  color: black;
+  cursor: pointer;
 }
 
 /* INPUT ICON TOGGLE BUTTON */
@@ -104,6 +106,8 @@ input[type="checkbox"].icon_toggle + label {
   display: flex;
   position: relative;
   align-items: center;
+  cursor: pointer;
+
 }
 input[type="checkbox"].icon_toggle + label::before {
   content: "";

@@ -21,8 +21,12 @@ const TakingSales_page = () => {
       <div className="taking_box_add_sku">
         <p>ลิงค์สินค้า</p>
         <input type="text" placeholder="www.shopee.con" />
-        <button className="jr_but_blue">+ เพิ่ม SKU</button>
-        <button className="jr_but_gray">รายงาน</button>
+        <button className="jr_but_blue">
+          <p>+ เพิ่ม SKU</p>
+        </button>
+        <button className="jr_but_gray">
+          <p>รายงาน</p>
+        </button>
       </div>
 
       <div className="taking_box_filter">
@@ -106,9 +110,9 @@ const TakingSales_page = () => {
           <th>สถานะ</th>
         </tr>
         {data_product_taking.length !== 0 ? (
-          <React.Fragment >
+          <React.Fragment>
             {data_product_taking.map((item, key) => (
-              <tr key = {key}>
+              <tr key={key}>
                 <td>
                   <input type="checkbox" />
                 </td>
@@ -142,7 +146,7 @@ const TakingSales_page = () => {
                 <td>{item.like}</td>
                 <td>
                   {item.rate_review.map((review_item, key) => (
-                    <div key = {key} className="taking_table_review">
+                    <div key={key} className="taking_table_review">
                       <p>{review_item.star}</p>
                       <p>ดาว</p>
                       <p>{review_item.socre}</p>

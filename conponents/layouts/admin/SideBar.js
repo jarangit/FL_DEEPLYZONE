@@ -39,7 +39,7 @@ const SideBar = ({ data }) => {
                   {item.sub.length !== 0
                     ? item.sub.map((sub_item, key) => (
                         <li key={key} className="sideBar_menu_item">
-                          <Link href={"/admin/product"}>
+                          <Link href={sub_item.link}>
                             <a className="sideBar_productBoost">
                               {sub_item.name}
                             </a>

@@ -13,27 +13,27 @@ export const menu_admin_feature = [
 export const menu_admin_overview = [
   {
     name: "รายงาน",
-    link: "report",
+    link: "/admin/overview/report",
     sub: [
       {
-        name: "items",
-        link: "items",
+        name: "ภาพรวม",
+        link: "/admin/overview/report/view",
       },
       {
-        name: "items",
-        link: "items",
+        name: "การเข้าชม",
+        link: "/admin/overview/report/visit",
       },
       {
-        name: "items",
-        link: "items",
+        name: "คำสั่งซื้อ",
+        link: "/admin/overview/report/order",
       },
       {
-        name: "items",
-        link: "items",
+        name: "รายจ่าย",
+        link: "/admin/overview/report/expenses",
       },
       {
-        name: "items",
-        link: "items",
+        name: "Marking center",
+        link: "/admin/overview/report/marking",
       },
     ],
   },
