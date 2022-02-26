@@ -39,12 +39,12 @@ const ProductBooster_page = () => {
                   <FontAwesomeIcon icon={faCalendarAlt} className="jr_icon" />
                 </span>
                 ปปปป/ดด/วว
+              </div>
                 {openDatePicker && (
                   <div ref={ref}>
                     <Calendar />
                   </div>
                 )}
-              </div>
             </div>
           </div>
           <div className="prod_booster_box_title_right_item">
