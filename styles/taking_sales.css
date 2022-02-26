@@ -10,6 +10,7 @@
 .taking_box_title_R {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .taking_box_title_R > input {
   margin-left: 20px;

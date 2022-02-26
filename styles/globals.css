@@ -21,7 +21,8 @@ select,
 table {
   font-family: "Prompt", sans-serif;
 }
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 a {
@@ -59,7 +60,7 @@ li {
   align-items: center;
   flex-wrap: wrap;
 }
-.addmin_container{
+.addmin_container {
   width: 1200px;
   padding: 20px;
 }
@@ -86,7 +87,7 @@ li {
   border-radius: 5px;
   cursor: pointer;
 }
-.jr_but_gray{
+.jr_but_gray {
   border: none;
   padding: 5px 20px;
   border-radius: 5px;
@@ -107,7 +108,6 @@ input[type="checkbox"].icon_toggle + label {
   position: relative;
   align-items: center;
   cursor: pointer;
-
 }
 input[type="checkbox"].icon_toggle + label::before {
   content: "";
@@ -135,4 +135,16 @@ input[type="checkbox"].icon_toggle:checked + label::after {
 }
 input[type="checkbox"].icon_toggle:checked + label {
   color: #13c660;
+}
+
+.jr_icon {
+  margin-right: 5px;
+}
+
+.jr_input_date {
+  border: 1px solid var(--blue);
+  padding: 0 5px;
+  color: grey;
+  margin-left: 10px;
+  cursor: pointer;
 }

@@ -1,9 +1,20 @@
-import React from "react";
-import { faSliders } from "@fortawesome/free-solid-svg-icons";
+import React, { useState, useEffect, useRef } from "react";
+import {
+  faCalendarAlt,
+  faL,
+  faSliders,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { data_product_taking } from "../../../../data/products";
+import Calendar from "../../../../conponents/items/calendar/Calendar";
+import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
 const TakingSales_page = () => {
-  console.log(data_product_taking);
+  const [openDatePicker, setopenDatePicker] = useState(false);
+  // console.log(data_product_taking);
+  const ref = useRef(null);
+  useOutsideClick(ref, () => {
+    if (openDatePicker) setopenDatePicker(false);
+  });
   return (
     <div className="taking">
       <div className="taking_box_title">
@@ -14,10 +25,22 @@ const TakingSales_page = () => {
 
         <div className="taking_box_title_R">
           <p>ช่วงเวลาของข้อมล</p>
-          <input type="date" />
+          <div
+            className="jr_input_date"
+            onClick={() => setopenDatePicker(true)}
+          >
+            <span>
+              <FontAwesomeIcon icon={faCalendarAlt} className="jr_icon" />
+            </span>
+            ปปปป/ดด/วว
+          </div>
+          {openDatePicker && (
+            <div ref={ref}>
+              <Calendar />
+            </div>
+          )}
         </div>
       </div>
-
       <div className="taking_box_add_sku">
         <p>ลิงค์สินค้า</p>
         <input type="text" placeholder="www.shopee.con" />

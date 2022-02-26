@@ -6,26 +6,42 @@ import {
   faBoltLightning,
   faClock,
 } from "@fortawesome/free-solid-svg-icons";
+import Calendar from "../../../conponents/items/calendar/Calendar";
+import ClickOutside from "../../../conponents/items/clickOutside/ClickOutside";
 const FeaturePage = () => {
   const menu_items = [
     {
       name: "Product Booster",
       link: "/admin/feature/product_booster",
       class_sty: [
-        <FontAwesomeIcon key = {"faBoltLightning"} icon={faBoltLightning} className="sideBar_icon_item" />,
+        <FontAwesomeIcon
+          key={"faBoltLightning"}
+          icon={faBoltLightning}
+          className="sideBar_icon_item"
+        />,
       ],
       sub: [],
     },
     {
       name: "Taking Sales",
       link: "sales",
-      class_sty: [<span key = {"sideBar_sku"} className="sideBar_sku">SKU</span>],
+      class_sty: [
+        <span key={"sideBar_sku"} className="sideBar_sku">
+          SKU
+        </span>,
+      ],
       sub: [],
     },
   ];
   return (
-    <div style={{ display: "flex", narginTop: "76px" }}>
-      <div className="admin_page">Feature mune</div>
+    <div >
+      <div className="admin_page">
+        Feature mune
+        <div>
+          {/* <ClickOutside/> */}
+          {/* <Calendar /> */}
+        </div>
+      </div>
     </div>
   );
 };

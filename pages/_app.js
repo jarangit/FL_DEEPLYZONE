@@ -12,6 +12,7 @@ import "../styles/product_booster.css"
 import "../styles/taking_sales.css"
 import "../styles/view_p.css"
 import "../styles/expenses.css"
+import "../styles/calendar.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 

@@ -14,11 +14,11 @@ const CustormLink = ({ href, children, ...props }) => {
   useEffect(() => {
     setisActive(false)
     if (asPath.length > 6) {
-      console.log("Find");
+      // console.log("Find");
       const slice = href.slice(6);
-      console.log({ dataSlice: slice });
+      // console.log({ dataSlice: slice });
       const find = asPath.includes(slice);
-      console.log(find)
+      // console.log(find)
       if (find && slice !== "") {
         setisActive(true);
       }
@@ -26,8 +26,8 @@ const CustormLink = ({ href, children, ...props }) => {
       asPath === href ? setisActive(true) : "";
     }
   }, [asPath, href]);
-  console.log(asPath);
-  console.log(href);
+  // console.log(asPath);
+  // console.log(href);
 
 
   

@@ -1,8 +1,24 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 import Progress_bar from "../../../../conponents/items/Progress_bar";
-import { faEye, faHeart, faCircle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEye,
+  faHeart,
+  faCircle,
+  faCalendarAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
+import Calendar from "../../../../conponents/items/calendar/Calendar";
+
+
+
 const ProductBooster_page = () => {
+  const [openDatePicker, setopenDatePicker] = useState(false);
+  // console.log(data_product_taking);
+  const ref = useRef(null);
+  useOutsideClick(ref, () => {
+    if (openDatePicker) setopenDatePicker(false);
+  });
   return (
     <div className="prod_booster">
       <div className="prod_booster_title">
@@ -16,14 +32,19 @@ const ProductBooster_page = () => {
           </div>
           <div className="prod_booster_box_title_right_item">
             <div className="prod_booster_input_date">
-              <input
-                type="date"
-                name="date_booster"
-                value="2018-07-22"
-                id="start"
-                min="2018-01-01"
-                max="2018-12-31"
-              />
+              <div className="jr_input_date"
+                onClick={()=> setopenDatePicker(!openDatePicker)}
+              >
+                <span>
+                  <FontAwesomeIcon icon={faCalendarAlt} className="jr_icon" />
+                </span>
+                ปปปป/ดด/วว
+                {openDatePicker && (
+                  <div ref={ref}>
+                    <Calendar />
+                  </div>
+                )}
+              </div>
             </div>
           </div>
           <div className="prod_booster_box_title_right_item">
@@ -48,7 +69,7 @@ const ProductBooster_page = () => {
 
       <div className="prod_booster_box_product">
         {Array.apply(null, { length: 5 }).map((item, key) => (
-          <div  key = {key} className="prod_booster_product_item">
+          <div key={key} className="prod_booster_product_item">
             <div className="prod_item_img">
               <img src="#" alt="" />
             </div>
