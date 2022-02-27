@@ -1,5 +1,5 @@
 import React from "react";
-import BarChart from "../../../../conponents/charts/BarChart";
+import BarChart from "../../../../conponents/charts/BarCharts";
 import LineChart from "../../../../conponents/charts/LineChart";
 
 const View_page = () => {

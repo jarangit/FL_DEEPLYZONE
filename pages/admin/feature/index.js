@@ -9,7 +9,7 @@ import {
 import Calendar from "../../../conponents/items/calendar/Calendar";
 import ClickOutside from "../../../conponents/items/clickOutside/ClickOutside";
 import LineChart from "../../../conponents/charts/LineChart";
-import BarChart from "../../../conponents/charts/BarChart";
+import BarChart from "../../../conponents/charts/BarCharts";
 const FeaturePage = () => {
   const menu_items = [
     {
