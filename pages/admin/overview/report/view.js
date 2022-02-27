@@ -1,4 +1,5 @@
 import React from "react";
+import BarChart from "../../../../conponents/charts/barChart";
 
 const View_page = () => {
   return (
@@ -10,11 +11,24 @@ const View_page = () => {
 
       <div className="view_p_box_menu">
         <ul>
-          <li style={{ backgroundColor: "#38B6FF" }} className="view_p_menu_item">
+          <li
+            style={{ backgroundColor: "#38B6FF" }}
+            className="view_p_menu_item"
+          >
             item
           </li>
-          <li style={{ backgroundColor: "#004AAD" }} className="view_p_menu_item">item</li>
-          <li style={{ backgroundColor: "#8c52ff" }} className="view_p_menu_item">item</li>
+          <li
+            style={{ backgroundColor: "#004AAD" }}
+            className="view_p_menu_item"
+          >
+            item
+          </li>
+          <li
+            style={{ backgroundColor: "#8c52ff" }}
+            className="view_p_menu_item"
+          >
+            item
+          </li>
           <li className="view_p_menu_item">item</li>
           <li className="view_p_menu_item">item</li>
           <li className="view_p_menu_item">item</li>
@@ -24,7 +38,9 @@ const View_page = () => {
 
       <div className="view_p_box_gaph">
         <p>แนวโน้นของตัวชี้วัดที่เลือก</p>
-        <div className="view_p_graph">GRAPH</div>
+        <div className="view_p_graph">
+          <BarChart />
+        </div>
       </div>
 
       <div className="view_p_box_ranking">
@@ -49,8 +65,6 @@ const View_page = () => {
           <div className="view_p_ranking_graph">GRAPH</div>
         </div>
       </div>
-
-
     </div>
   );
 };

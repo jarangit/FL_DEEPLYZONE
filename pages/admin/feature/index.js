@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Calendar from "../../../conponents/items/calendar/Calendar";
 import ClickOutside from "../../../conponents/items/clickOutside/ClickOutside";
+import BarChart from "../../../conponents/charts/barChart";
 const FeaturePage = () => {
   const menu_items = [
     {
@@ -38,6 +39,7 @@ const FeaturePage = () => {
       <div className="admin_page">
         Feature mune
         <div>
+          <BarChart/>
           {/* <ClickOutside/> */}
           {/* <Calendar /> */}
         </div>
