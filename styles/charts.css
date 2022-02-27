@@ -1,0 +1,58 @@
+.sales_charts_card {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(230, 230, 230);
+  height: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(163, 163, 163);
+}
+
+.salse_charts_card_item {
+  border: 1px solid var(--lightGray);
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 220px;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.salse_charts_card_item.active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.salse_charts_card_item_icon {
+  margin: 0 5px;
+  color: gray;
+}
+.sales_charts_item_num {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sales_charts_item_compare {
+  font-size: 10px;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.sales_charts_box_chart{
+  margin-top: 20px;
+}

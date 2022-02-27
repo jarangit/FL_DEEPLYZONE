@@ -11,6 +11,7 @@ import ClickOutside from "../../../conponents/items/clickOutside/ClickOutside";
 import LineChart from "../../../conponents/charts/LineChart";
 import BarChart from "../../../conponents/charts/BarCharts";
 import LineFillChart from "../../../conponents/charts/LineFillCharts";
+import SalesLineChart from "../../../conponents/charts/SalesLineChart";
 const FeaturePage = () => {
   const menu_items = [
     {
@@ -43,7 +44,8 @@ const FeaturePage = () => {
         <div>
           {/* <LineChart/>
           <BarChart/> */}
-          <LineFillChart/>
+          {/* <LineFillChart/> */}
+          <SalesLineChart/>
           {/* <ClickOutside/> */}
           {/* <Calendar /> */}
         </div>

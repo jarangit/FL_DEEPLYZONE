@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import BarChart from "../../../../conponents/charts/BarCharts";
 import LineChart from "../../../../conponents/charts/LineChart";
 import LineFillChart from "../../../../conponents/charts/LineFillCharts";
+import SalesLineChart from "../../../../conponents/charts/SalesLineChart";
 
 const View_page = () => {
+  const [show_salesChart, setshow_salesChart] = useState(false);
   return (
     <div className="view_p">
       <div className="view_p_box_title">
@@ -16,6 +18,7 @@ const View_page = () => {
           <li
             style={{ backgroundColor: "#38B6FF" }}
             className="view_p_menu_item"
+            onClick={()=>setshow_salesChart(!show_salesChart)}
           >
             ยอดขาย
           </li>
@@ -39,10 +42,16 @@ const View_page = () => {
       </div>
 
       <div className="view_p_box_gaph">
-        <p>แนวโน้นของตัวชี้วัดที่เลือก</p>
-        <div className="view_p_graph">
-          <LineChart />
-        </div>
+        {show_salesChart ? (
+          <React.Fragment>
+            <p>แนวโน้นของตัวชี้วัดที่เลือก</p>
+            <div className="view_p_graph">
+              <LineChart />
+            </div>
+          </React.Fragment>
+        ) : (
+          <SalesLineChart />
+        )}
       </div>
 
       <div className="view_p_box_ranking">
@@ -55,7 +64,7 @@ const View_page = () => {
           </ul>
 
           <div className="view_p_ranking_graph">
-            <BarChart/>
+            <BarChart />
           </div>
         </div>
         <div className="view_p_box_ranking_graph">
@@ -67,7 +76,7 @@ const View_page = () => {
           </ul>
 
           <div className="view_p_ranking_graph">
-            <LineFillChart/>
+            <LineFillChart />
           </div>
         </div>
       </div>
