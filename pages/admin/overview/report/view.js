@@ -16,7 +16,7 @@ const View_page = () => {
             style={{ backgroundColor: "#38B6FF" }}
             className="view_p_menu_item"
           >
-            item
+            ยอดขาย
           </li>
           <li
             style={{ backgroundColor: "#004AAD" }}
