@@ -9,11 +9,12 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Line } from "react-chartjs-2";
+import { Line, Bar } from "react-chartjs-2";
 import Chart from "chart.js/auto";
 import moment from "moment";
 export const options = {
   responsive: true,
+  indexAxis: "y",
   plugins: {
     legend: {
       display: false,
@@ -21,47 +22,47 @@ export const options = {
   },
   scales: {
     y: {
-      beginAtZero: true,
-      ticks: {
-        display: false,
-
-      },
       grid: {
-        zeroLineBorderDashOffset: 9
-      }
+      },
+      // beginAtZero: true,
+      grace: "5%",
+      
+      max: 10,
+      grid: {
+        zeroLineBorderDashOffset: 9,
+        display: false,
+      },
     },
     x: {
-      grid: {
-        display: false
-      }
+     
     },
   },
 };
-const labels = moment.months();
+const labels = ["หมอน", "กระเป๋าเดินทาง", "หมอนข้าง", "รายการ 4", "รายการ 5"];
 console.log(moment().locale("th"));
 export const data = {
   labels,
   datasets: [
     {
-      label: "Dataset 1",
-      data: [2, 5, 4, 4, 4, 5],
-      borderColor: "rgb(22, 74, 173)",
-      backgroundColor: "rgb(22, 74, 173)",
-      tension: 0.3,
-    },
-    {
-      label: "Dataset 2",
-      data: [3, 5, 3, 5, 1, 6],
-      borderColor: "rgb(64, 185, 255)",
-      backgroundColor: "rgb(64, 185, 255)",
-      tension: 0.3,
-    },
-    {
-      label: "Dataset 3",
-      data: [1, 4, 3, 5, 3, 7],
-      borderColor: "rgb(140, 82, 255)",
-      backgroundColor:  "rgb(140, 82, 255)",
-      tension: 0.3,
+      axis: "y",
+      label: "My First Dataset",
+      data: [65, 60, 40, 30, 20],
+      fill: false,
+      backgroundColor: [
+        "rgb(49, 53, 110)",
+        "rgb(47, 95, 152)",
+        "rgb(45, 139, 186)",
+        "rgb(65, 184, 213)",
+        "rgb(65, 184, 213)",
+      ],
+      borderColor: [
+        "rgb(49, 53, 110)",
+        "rgb(47, 95, 152)",
+        "rgb(45, 139, 186)",
+        "rgb(65, 184, 213)",
+        "rgb(65, 184, 213)",
+      ],
+      borderWidth: 1,
     },
   ],
 };
@@ -69,7 +70,7 @@ export const data = {
 const BarChart = () => {
   return (
     <div>
-      <Line options={options} data={data} height={50}/>
+      <Bar options={options} data={data} width={200} />
     </div>
   );
 };

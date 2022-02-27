@@ -1,5 +1,6 @@
 import React from "react";
-import BarChart from "../../../../conponents/charts/barChart";
+import BarChart from "../../../../conponents/charts/BarChart";
+import LineChart from "../../../../conponents/charts/LineChart";
 
 const View_page = () => {
   return (
@@ -39,7 +40,7 @@ const View_page = () => {
       <div className="view_p_box_gaph">
         <p>แนวโน้นของตัวชี้วัดที่เลือก</p>
         <div className="view_p_graph">
-          <BarChart />
+          <LineChart />
         </div>
       </div>
 
@@ -52,7 +53,9 @@ const View_page = () => {
             <li className="view_p_box_menu_item">ยอดขายสินค้า</li>
           </ul>
 
-          <div className="view_p_ranking_graph">GRAPH</div>
+          <div className="view_p_ranking_graph">
+            <BarChart/>
+          </div>
         </div>
         <div className="view_p_box_ranking_graph">
           <p>จัดอันดับสินค้า</p>
