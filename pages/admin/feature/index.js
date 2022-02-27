@@ -45,7 +45,7 @@ const FeaturePage = () => {
           {/* <LineChart/>
           <BarChart/> */}
           {/* <LineFillChart/> */}
-          <SalesLineChart/>
+          {/* <SalesLineChart/> */}
           {/* <ClickOutside/> */}
           {/* <Calendar /> */}
         </div>

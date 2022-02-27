@@ -1,16 +1,45 @@
-import React, { useState } from "react";
+import React, { useState , useRef} from "react";
 import BarChart from "../../../../conponents/charts/BarCharts";
 import LineChart from "../../../../conponents/charts/LineChart";
 import LineFillChart from "../../../../conponents/charts/LineFillCharts";
 import SalesLineChart from "../../../../conponents/charts/SalesLineChart";
-
+import Calendar from "../../../../conponents/items/calendar/Calendar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
 const View_page = () => {
-  const [show_salesChart, setshow_salesChart] = useState(false);
+  const [show_salesChart, setshow_salesChart] = useState(true);
+  const [openDatePicker, setopenDatePicker] = useState(false);
+
+  const ref = useRef(null);
+  useOutsideClick(ref, () => {
+    if (openDatePicker) setopenDatePicker(false);
+  });
+  
   return (
     <div className="view_p">
-      <div className="view_p_box_title">
-        <p>ช่วงเวลาข้อมูล</p>
-        <input type="date" />
+      <div style={{display: "flex"}}>
+        <div className="prod_booster_box_title_right_item">
+          <p>ช่วงเวลาของข้อมล</p>
+        </div>
+        <div className="prod_booster_box_title_right_item">
+          <div className="prod_booster_input_date">
+            <div
+              className="jr_input_date"
+              onClick={() => setopenDatePicker(!openDatePicker)}
+            >
+              <span>
+                <FontAwesomeIcon icon={faCalendarAlt} className="jr_icon" />
+              </span>
+              ปปปป/ดด/วว
+            </div>
+            {openDatePicker && (
+              <div ref={ref}>
+                <Calendar />
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       <div className="view_p_box_menu">
@@ -18,7 +47,7 @@ const View_page = () => {
           <li
             style={{ backgroundColor: "#38B6FF" }}
             className="view_p_menu_item"
-            onClick={()=>setshow_salesChart(!show_salesChart)}
+            onClick={() => setshow_salesChart(!show_salesChart)}
           >
             ยอดขาย
           </li>
