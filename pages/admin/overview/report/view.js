@@ -1,6 +1,7 @@
 import React from "react";
 import BarChart from "../../../../conponents/charts/BarCharts";
 import LineChart from "../../../../conponents/charts/LineChart";
+import LineFillChart from "../../../../conponents/charts/LineFillCharts";
 
 const View_page = () => {
   return (
@@ -65,7 +66,9 @@ const View_page = () => {
             <li className="view_p_box_menu_item">ยอดขายสินค้า</li>
           </ul>
 
-          <div className="view_p_ranking_graph">GRAPH</div>
+          <div className="view_p_ranking_graph">
+            <LineFillChart/>
+          </div>
         </div>
       </div>
     </div>
