@@ -56,58 +56,69 @@ const TakingSales_page = () => {
         <p>ข้อมูลติดตาม</p>
         <ul>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              ชื่อสินค้า
               <input type="checkbox" />
-              <span>ชื่อสินค้า</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              ราคาสินค้า
               <input type="checkbox" />
-              <span>ราคาสินค้า</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              คะแนนสินค้า
               <input type="checkbox" />
-              <span>คะแนนสินค้า</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              ยอดขาย
               <input type="checkbox" />
-              <span>ยอดขาย</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              หมวดหมู่สินค้า
               <input type="checkbox" />
-              <span>หมวดหมู่สินค้า</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              การกดถูกใจ
               <input type="checkbox" />
-              <span>การกดถูกใจ</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              คะแนนรีวิว
               <input type="checkbox" />
-              <span>คะแนนรีวิว</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
-            <label>
+            <label className="container_input_text">
+              ที่ตั้งร้ายค้า
               <input type="checkbox" />
-              <span>ที่ตั้งร้ายค้า</span>
+              <span className="checkmark_left"></span>
             </label>
           </li>
           <li className="taking_filter_item">
             <button className="jr_but_gray">ลบสินค้า</button>
           </li>
           <li className="taking_filter_item">
-            <button className="taking_filter_but_advance">
+            <button
+              style={{ fontSize: "16px" }}
+              className="taking_filter_but_advance"
+            >
               <span>
                 <FontAwesomeIcon icon={faSliders} />
               </span>
@@ -120,7 +131,10 @@ const TakingSales_page = () => {
       <table className="taking_filter_table">
         <tr>
           <th>
-            <input type="checkbox" />
+            <label className="container_input">
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+            </label>
           </th>
           <th>ชื่อสินค้า</th>
           <th>ราคาสินค้า</th>
@@ -137,7 +151,10 @@ const TakingSales_page = () => {
             {data_product_taking.map((item, key) => (
               <tr key={key}>
                 <td>
-                  <input type="checkbox" />
+                  <label className="container_input">
+                    <input type="checkbox" />
+                    <span className="checkmark"></span>
+                  </label>
                 </td>
                 <td>{item.name}</td>
                 <td>

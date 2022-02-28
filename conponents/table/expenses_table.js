@@ -67,7 +67,7 @@ const Expenses_table = () => {
           <button className="jr_but_gray">ลบสินค้า</button>
         </div>
         <div>{"< 1 / 1 >"}</div>
-        <div className="expenses_pagination_select">
+        <div className="">
           <label>
             <select name="expenses_pagination_select" id="">
               <option value="">25 รายการ</option>

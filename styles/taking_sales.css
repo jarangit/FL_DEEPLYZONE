@@ -81,6 +81,7 @@
   border: none;
   color: white;
   text-align: center;
+  min-width: 100px;
 }
 .taking_filter_table > tr > td {
   text-align: center;
