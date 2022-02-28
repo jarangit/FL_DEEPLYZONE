@@ -62,7 +62,8 @@ li {
 }
 .addmin_container {
   width: 1200px;
-  padding: 20px;
+  padding: 20px 20px;
+  margin-top: 50px;
 }
 
 .index_img {

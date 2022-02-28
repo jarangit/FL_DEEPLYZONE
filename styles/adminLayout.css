@@ -4,7 +4,8 @@
   align-items: center;
   background-color: var(--blue);
   padding: 10px;
-  position: sticky;
+  position: fixed;
+  /* min-width: 1400px; */
   width: 100%;
   z-index: 100;
   height: 50px;
@@ -36,12 +37,11 @@
   color: white;
   position: relative;
 }
-.admin_menu_item:hover .admin_menu_dropdown{
+.admin_menu_item:hover .admin_menu_dropdown {
   max-height: 300px;
   padding: 10px 10px;
-
 }
-.admin_menu_dropdown{
+.admin_menu_dropdown {
   position: absolute;
   background-color: #eeeeee;
   right: 0;
@@ -50,15 +50,15 @@
   min-width: 150px;
   color: var(--navy);
   max-height: 0;
-  transition:all 0.2s;
+  transition: all 0.2s;
   overflow: hidden;
 }
-.admin_menu_dropdown_item{
+.admin_menu_dropdown_item {
   margin-top: 10px;
   color: var(--navy);
   border-bottom: 1px solid rgb(192, 192, 192);
 }
-.dropdown_item_icon{
+.dropdown_item_icon {
   color: var(--blue);
   margin-right: 10px;
 }
@@ -85,7 +85,8 @@
   height: calc(100vh);
   background-color: var(--blue);
   position: sticky;
-  top: 50px;
+  height: 100vw;
+  /* top: 50px; */
 }
 
 .sideBar_box {
@@ -93,6 +94,7 @@
   padding: 20px 10px;
   transition: all 0.2s;
   overflow: hidden;
+  margin-top: 50px;
 }
 .sideBar_box.active {
   min-width: 180px;
@@ -136,10 +138,10 @@
   background-color: var(--orange);
   color: white;
 }
-.sideBar_menu_item:hover .sideBar_icon_item{
+.sideBar_menu_item:hover .sideBar_icon_item {
   color: white;
 }
-.sideBar_menu_item:hover .sideBar_sku{
+.sideBar_menu_item:hover .sideBar_sku {
   background-color: white;
   color: var(--orange);
 }
