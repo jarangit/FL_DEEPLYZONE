@@ -14,6 +14,7 @@ import "../styles/view_p.css"
 import "../styles/expenses.css"
 import "../styles/calendar.css"
 import "../styles/charts.css"
+import "../styles/slide_banner.css"
 
 import LayoutWrapper from "../conponents/layouts/LayoutWrapper";
 

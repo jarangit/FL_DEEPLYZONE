@@ -1,18 +1,28 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
-
-const slideImages = [
-  "https://img.freepik.com/free-psd/colorful-discount-sale-podium_125755-675.jpg?w=996",
-  "https://img.freepik.com/free-vector/online-shopping-banner-with-3d-shopping-cart-clouds-social-icons-vector-illustration_548887-100.jpg?w=996",
+import "react-slideshow-image/dist/styles.css";
+import ImageGallery from "react-image-gallery";
+import { faL } from "@fortawesome/free-solid-svg-icons";
+const images = [
+  {
+    original: "https://www.jdmedia.co.za/images/carousel/Ecommerce-Banner-1920.jpg",
+    thumbnail: "https://www.jdmedia.co.za/images/carousel/Ecommerce-Banner-1920.jpg",
+  },
+  {
+    original: "https://www.tricasol.com/wp-content/uploads/2019/09/e-commerce-banner-1024x341.jpg",
+    thumbnail: "https://www.tricasol.com/wp-content/uploads/2019/09/e-commerce-banner-1024x341.jpg",
+  },
 ];
 
 const Slideshow = () => {
   return (
-    <div>
-      <img
-        style={{ width: "100%", borderRadius: "5px" ,}}
-        src="https://img.freepik.com/free-vector/online-shopping-banner-with-3d-shopping-cart-clouds-social-icons-vector-illustration_548887-100.jpg?w=996"
-        alt=""
+    <div style={{marginBottom: "20px"}} >
+      <ImageGallery 
+      items={images} 
+      showBullets={true} 
+      showThumbnails={false} 
+      showPlayButton={false}
+      showFullscreenButton = {false}
+      showNav={false}
       />
     </div>
   );

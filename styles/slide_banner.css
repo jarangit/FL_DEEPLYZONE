@@ -1,0 +1,27 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.each-fade {
+  display: flex;
+  width: 20%;
+}
+
+.each-fade > div {
+  width: 75%;
+}
+
+.each-fade > div img {
+  width: 100px;
+  height: 100px;
+  /* object-fit: cover; */
+}
+
+.each-fade p {
+  width: 25%;
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}

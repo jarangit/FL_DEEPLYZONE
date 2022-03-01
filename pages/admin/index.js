@@ -1,7 +1,6 @@
 import React from "react";
 import NewList from "../../conponents/layouts/admin/news/NewList";
 import ShopList from "../../conponents/layouts/admin/shop/ShopList";
-import SideBar from "../../conponents/layouts/admin/SideBar";
 import Slideshow from "../../conponents/layouts/admin/slideBanner/SlideBanner";
 const AdminIndex = () => {
   return (
