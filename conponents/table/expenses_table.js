@@ -3,6 +3,7 @@ import { fake_data_table_overview } from "../../data/data_table_overview";
 const Expenses_table = () => {
   return (
     <div>
+    
       <div style={{ overflowX: "auto", borderRadius: "10px", width: "100%" }}>
         <table className="expenses_table">
           <tr>
@@ -14,7 +15,7 @@ const Expenses_table = () => {
             </th>
             <th>สินค้า</th>
             <th>
-              <div class="selectdiv ">
+              <div class="selectdiv">
                 <label>
                   <select>
                     <option>ประเภทโฆษณา</option>
@@ -67,9 +68,9 @@ const Expenses_table = () => {
           <button className="jr_but_gray">ลบสินค้า</button>
         </div>
         <div>{"< 1 / 1 >"}</div>
-        <div className="">
-          <label>
-            <select name="expenses_pagination_select" id="">
+        <div>
+          <label className="expenses_pagination_select">
+            <select>
               <option value="">25 รายการ</option>
               <option value="">50 รายการ</option>
               <option value="">75 รายการ</option>
