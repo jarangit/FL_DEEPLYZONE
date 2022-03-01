@@ -20,7 +20,11 @@ const Account_page = () => {
       <div className="account_box_grid">
         <div className="account_grid_item">
           <div className="account_icon">
-            <FontAwesomeIcon icon={faUser} size="3x"  className = "jr_color_blue" />
+            <FontAwesomeIcon
+              icon={faUser}
+              size="3x"
+              className="jr_color_blue"
+            />
           </div>
           <div className="account_icon_title">โปรไฟล์</div>
         </div>
@@ -33,7 +37,11 @@ const Account_page = () => {
 
         <div className="account_grid_item">
           <div className="account_icon">
-            <FontAwesomeIcon icon={faMobilePhone} size="3x"  className = "jr_color_blue" />
+            <FontAwesomeIcon
+              icon={faMobilePhone}
+              size="3x"
+              className="jr_color_blue"
+            />
           </div>
           <div className="account_icon_title">เบอร์โทรศัพท์</div>
         </div>
@@ -46,7 +54,11 @@ const Account_page = () => {
 
         <div className="account_grid_item">
           <div className="account_icon">
-            <FontAwesomeIcon icon={faEnvelope} size="3x"  className = "jr_color_blue" />
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              size="3x"
+              className="jr_color_blue"
+            />
           </div>
           <div className="account_icon_title">E-mail</div>
         </div>
@@ -59,7 +71,11 @@ const Account_page = () => {
 
         <div className="account_grid_item">
           <div className="account_icon">
-            <FontAwesomeIcon icon={faLock} size="3x"  className = "jr_color_blue" />
+            <FontAwesomeIcon
+              icon={faLock}
+              size="3x"
+              className="jr_color_blue"
+            />
           </div>
           <div className="account_icon_title">รหัสผ่าน</div>
         </div>
@@ -72,10 +88,9 @@ const Account_page = () => {
         <div className="account_grid_item">
           <div className="account_icon">
             <FontAwesomeIcon
-              className="account_icon_store"
+              className="account_icon_store jr_color_blue"
               icon={faStoreAlt}
               size="3x"
-              className = "jr_color_blue"
             />
           </div>
           <div className="account_icon_title_store">เพิ่มร้านค้า</div>
@@ -83,7 +98,11 @@ const Account_page = () => {
         <div className="account_grid_item">
           <div className="account_user_data_item">
             <span className="account_icon">
-              <FontAwesomeIcon icon={faCircle} size="2x"  className = "jr_color_blue" />
+              <FontAwesomeIcon
+                icon={faCircle}
+                size="2x"
+                className="jr_color_blue"
+              />
             </span>
             Store 1
           </div>
@@ -97,7 +116,11 @@ const Account_page = () => {
         <div className="account_grid_item">
           <div className="account_user_data_item">
             <span className="account_icon">
-              <FontAwesomeIcon icon={faCircle} size="2x"  className = "jr_color_blue" />
+              <FontAwesomeIcon
+                icon={faCircle}
+                size="2x"
+                className="jr_color_blue"
+              />
             </span>
             Store 2
           </div>
