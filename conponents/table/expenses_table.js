@@ -1,9 +1,8 @@
 import React from "react";
 import { fake_data_table_overview } from "../../data/data_table_overview";
-const Expenses_table = () => {
+const Expenses_table = ({ data, func_select }) => {
   return (
     <div>
-    
       <div style={{ overflowX: "auto", borderRadius: "10px", width: "100%" }}>
         <table className="expenses_table">
           <tr>
@@ -17,10 +16,10 @@ const Expenses_table = () => {
             <th>
               <div class="selectdiv">
                 <label>
-                  <select>
-                    <option>ประเภทโฆษณา</option>
-                    <option>Discovery Ads</option>
-                    <option>Search Ads</option>
+                  <select onChange={func_select}>
+                    <option value="">ประเภทโฆษณา</option>
+                    <option value={"Discovery Ads"}>Discovery Ads</option>
+                    <option value={"Search Ads"}> Search Ads</option>
                   </select>
                 </label>
               </div>
@@ -39,7 +38,7 @@ const Expenses_table = () => {
             <th>ราคาต่อการสั่งซื้อ</th>
           </tr>
 
-          {fake_data_table_overview.map((item, key) => (
+          {data.map((item, key) => (
             <React.Fragment key={key}>
               <tr>
                 <td>
