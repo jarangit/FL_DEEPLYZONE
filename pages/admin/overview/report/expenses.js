@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from "react";
 import Expenses_table from "../../../../conponents/table/expenses_table";
+import Pagination from "../../../../conponents/table/pagination";
 import { fake_data_table_overview } from "../../../../data/data_table_overview";
 const Expenses_page = () => {
   const [data, setdata] = useState(fake_data_table_overview);
-  function onSelect(e) {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setpostsPerPage] = useState(5);
 
-    console.log(e.target.value);
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
+  console.log({"currP": currentPage});
+  //Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  //CHANGE LIMIT DATA
+  const limit = (limitNum) => setpostsPerPage(limitNum)
+  function onSelect(e) {
     if (e.target.value != "") {
       const filter = fake_data_table_overview.filter((item) =>
         item.type.includes(e.target.value)
       );
       setdata(filter);
     } else {
-      console.log("null");
       setdata(fake_data_table_overview);
     }
   }
@@ -21,7 +31,14 @@ const Expenses_page = () => {
   return (
     <div className="expenses_p">
       <p className="expenses_p_title">รายการโฆษณาทั้งหมด</p>
-      <Expenses_table data={data} func_select={onSelect} />
+      <Expenses_table data={currentPosts} func_select={onSelect} />
+      <Pagination
+        limit = {limit}
+        paginate={paginate}
+        postsPerPage={postsPerPage}
+        totalPosts={fake_data_table_overview.length}
+        current_page={currentPage}
+      />
     </div>
   );
 };

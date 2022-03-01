@@ -277,3 +277,15 @@ display: none;
   cursor: pointer;
   z-index: 5;
 }
+
+
+.expenses_pagination_bux_paginate{
+  display: flex;
+  gap: 10px;
+}
+
+.expenses_pagination_bux_paginate>button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
