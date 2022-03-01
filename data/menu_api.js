@@ -16,6 +16,7 @@ export const menu_admin_overview = [
   {
     name: "รายงาน",
     link: "/admin/overview/report",
+    icon: "space_icon",
     sub: [
       {
         name: "ภาพรวม",

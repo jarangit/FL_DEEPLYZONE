@@ -32,7 +32,7 @@ const SideBar = ({ data }) => {
                   >
                     <Link href={item.link}>
                       <a>
-                        <div className={ item.icon }/>
+                        <span className={ item.icon }/>
                         <p>{item.name}</p>
                       </a>
                     </Link>
