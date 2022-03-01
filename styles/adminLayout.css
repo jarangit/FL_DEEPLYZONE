@@ -9,6 +9,8 @@
   width: 100%;
   z-index: 100;
   height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px;
+
 }
 
 .admin_menu_left {
@@ -82,11 +84,17 @@
 /* SIDEBAR */
 
 .sideBar {
-  height: calc(100vh);
+  height: 100%;
+  min-width: 40px;
+  /* width: 160px; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   background-color: var(--blue);
-  position: sticky;
-  height: 100vw;
-  /* top: 50px; */
+  overflow-x: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
 }
 
 .sideBar_box {
@@ -102,9 +110,15 @@
   transition: all 0.2s;
   overflow: hidden;
 }
+
+.sideBar_box.active .sideBar_box{
+  background-color: red;
+  
+}
 .sideBar_box.active .sideBar_menu_item {
   width: 100%;
   transition: all 0.2s;
+
 }
 
 .sideBar_menu > ul {
