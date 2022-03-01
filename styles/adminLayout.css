@@ -147,7 +147,7 @@
   width: 100%;
   padding-left: 10px;
 }
-.sideBar_menu_item:hover {
+.sideBar_menu_item:hover ,.sideBar_menu_item.active {
   background-color: var(--orange);
   color: white;
 }

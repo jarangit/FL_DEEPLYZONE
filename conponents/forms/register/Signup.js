@@ -21,8 +21,8 @@ const SignupForm = () => {
         </div>
         <div className="login_item">
           <label>รหัสผ่าน</label>
-          <input type="text" placeholder="รหัสผ่าน" />
-          <input type="text" placeholder="ยืนยันรหัสผ่าน" />
+          <input type="password" placeholder="รหัสผ่าน" />
+          <input type="password" placeholder="ยืนยันรหัสผ่าน" />
         </div>
         <div className="login_item_select">
           <label>รู้จัก Deeply.zone จากช่องทางไหน</label>
