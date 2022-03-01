@@ -1,6 +1,6 @@
-import React from "react";
-import { fake_data_table_overview } from "../../data/data_table_overview";
+import React, { useState } from "react";
 const Expenses_table = ({ data, func_select }) => {
+  const [checkedAll, setcheckedAll] = useState(false);
   return (
     <div>
       <div style={{ overflowX: "auto", borderRadius: "10px", width: "100%" }}>
@@ -8,7 +8,10 @@ const Expenses_table = ({ data, func_select }) => {
           <tr>
             <th>
               <label className="container_input">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  onChange={() => setcheckedAll(!checkedAll)}
+                />
                 <span className="checkmark"></span>
               </label>
             </th>
@@ -43,7 +46,12 @@ const Expenses_table = ({ data, func_select }) => {
               <tr>
                 <td>
                   <label className="container_input">
-                    <input type="checkbox" />
+                    {checkedAll ? (
+                      <input type="checkbox" checked={true} />
+                    ) : (
+                      <input type="checkbox" />
+                    )}
+                    <input type="checkbox" checked={""} />
                     <span className="checkmark"></span>
                   </label>
                 </td>
@@ -62,7 +70,6 @@ const Expenses_table = ({ data, func_select }) => {
           ))}
         </table>
       </div>
-    
     </div>
   );
 };
