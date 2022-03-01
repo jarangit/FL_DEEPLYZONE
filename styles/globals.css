@@ -112,9 +112,14 @@ input[type="checkbox"].icon_toggle + label {
   position: relative;
   align-items: center;
   cursor: pointer;
+  justify-content: center;
+  margin-top: 20px;
 }
 input[type="checkbox"].icon_toggle + label::before {
   content: "";
+  position: absolute;
+  top: -25px;
+  left: 40%;
   width: 2em;
   height: 1em;
   background-color: #aaaaaa;
@@ -125,7 +130,8 @@ input[type="checkbox"].icon_toggle + label::before {
 input[type="checkbox"].icon_toggle + label::after {
   content: "";
   position: absolute;
-  left: 0em;
+  top: -27px;
+  left: 4em;
   width: 1.2em;
   height: 1.2em;
   background-color: #d1d1d1;
@@ -134,7 +140,7 @@ input[type="checkbox"].icon_toggle + label::after {
   transition: 200ms ease-in-out;
 }
 input[type="checkbox"].icon_toggle:checked + label::after {
-  left: 1em;
+  left: 5em;
   background-color: #13c660;
 }
 input[type="checkbox"].icon_toggle:checked + label {
