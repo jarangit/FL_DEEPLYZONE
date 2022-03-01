@@ -1,6 +1,6 @@
 export const data_product_taking = [
   {
-    id: 1,
+    id: "1",
     name: "product1",
     price: 1200,
     price_rate: -0.5,
@@ -35,7 +35,7 @@ export const data_product_taking = [
     status: "pending",
   },
   {
-    id: 2,
+    id: "2",
     name: "product2",
     price: 530,
     price_rate: 0.5,
@@ -71,7 +71,7 @@ export const data_product_taking = [
     status: "pending",
   },
   {
-    id: 3,
+    id: "3",
     name: "product3",
     price: 600,
     price_rate: 0,

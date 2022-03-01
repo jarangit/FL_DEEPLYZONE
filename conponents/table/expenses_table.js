@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import CheckBox from "../items/input/checkBox";
 const Expenses_table = ({ data, func_select }) => {
-  const [checkedAll, setcheckedAll] = useState(false);
-
   const [isCheckAll, setIsCheckAll] = useState(false);
   const [isCheck, setIsCheck] = useState([]);
-  const [list, setList] = useState([]);
 
   const handleSelectAll = (e) => {
     setIsCheckAll(!isCheckAll);
@@ -17,13 +14,10 @@ const Expenses_table = ({ data, func_select }) => {
 
   const handleClick = (e) => {
     const { id, checked } = e.target;
-
     setIsCheck([...isCheck, id]);
     if (!checked) {
       setIsCheck(isCheck.filter((item) => item !== id));
     }
-
-    console.log(isCheck);
   };
   return (
     <div>

@@ -8,10 +8,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { data_product_taking } from "../../../../data/products";
 import Calendar from "../../../../conponents/items/calendar/Calendar";
 import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
+import TalkingSkuTable from "../../../../conponents/table/talkingSkuTable";
 const TakingSales_page = () => {
   const [openDatePicker, setopenDatePicker] = useState(false);
   // console.log(data_product_taking);
   const ref = useRef(null);
+
+
+
   useOutsideClick(ref, () => {
     if (openDatePicker) setopenDatePicker(false);
   });
@@ -128,90 +132,7 @@ const TakingSales_page = () => {
         </ul>
       </div>
 
-      <table className="taking_filter_table">
-        <tr>
-          <th>
-            <label className="container_input">
-              <input type="checkbox" />
-              <span className="checkmark"></span>
-            </label>
-          </th>
-          <th>ชื่อสินค้า</th>
-          <th>ราคาสินค้า</th>
-          <th>คะแนนสินค้า</th>
-          <th>ยอดขาย</th>
-          <th>หมวดหมู่สินค้า</th>
-          <th>การกดถูกใจ</th>
-          <th>คะแนนรีวิว</th>
-          <th>ที่ตั้งร้ายค้า</th>
-          <th>สถานะ</th>
-        </tr>
-        {data_product_taking.length !== 0 ? (
-          <React.Fragment>
-            {data_product_taking.map((item, key) => (
-              <tr key={key}>
-                <td>
-                  <label className="container_input">
-                    <input type="checkbox" />
-                    <span className="checkmark"></span>
-                  </label>
-                </td>
-                <td>{item.name}</td>
-                <td>
-                  {item.price}
-                  <div
-                    style={{
-                      color: `${item.price_rate >= 0 ? "#31e500" : "red"}`,
-                    }}
-                    className="price_change"
-                  >
-                    [<span>{item.price_rate >= 0 ? "+" : ""}</span>
-                    {item.price_rate}%]
-                  </div>
-                </td>
-                <td>{item.rate}</td>
-                <td>
-                  {item.sales}
-                  <div
-                    style={{
-                      color: `${item.sales_rate >= 0 ? "#31e500" : "red"}`,
-                    }}
-                    className="price_change"
-                  >
-                    [<span>{item.sales_rate >= 0 ? "+" : ""}</span>
-                    {item.sales_rate}%]
-                  </div>
-                </td>{" "}
-                <td>{item.category}</td>
-                <td>{item.like}</td>
-                <td>
-                  {item.rate_review.map((review_item, key) => (
-                    <div key={key} className="taking_table_review">
-                      <p>{review_item.star}</p>
-                      <p>ดาว</p>
-                      <p>{review_item.socre}</p>
-                    </div>
-                  ))}
-                </td>
-                <td>{item.address}</td>
-                <td className="taking_table_status">
-                  {item.status}
-                  <div>
-                    <button disabled>
-                      <a href="#">ข้อมูล</a>
-                    </button>
-                  </div>
-                  <div>
-                    <button disabled>ลบ</button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </React.Fragment>
-        ) : (
-          ""
-        )}
-      </table>
+      <TalkingSkuTable data = {data_product_taking} />
     </div>
   );
 };
