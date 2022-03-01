@@ -1,6 +1,30 @@
 import React, { useState } from "react";
+import CheckBox from "../items/input/checkBox";
 const Expenses_table = ({ data, func_select }) => {
   const [checkedAll, setcheckedAll] = useState(false);
+
+  const [isCheckAll, setIsCheckAll] = useState(false);
+  const [isCheck, setIsCheck] = useState([]);
+  const [list, setList] = useState([]);
+
+  const handleSelectAll = (e) => {
+    setIsCheckAll(!isCheckAll);
+    setIsCheck(data.map((item) => item.id));
+    if (isCheckAll) {
+      setIsCheck([]);
+    }
+  };
+
+  const handleClick = (e) => {
+    const { id, checked } = e.target;
+
+    setIsCheck([...isCheck, id]);
+    if (!checked) {
+      setIsCheck(isCheck.filter((item) => item !== id));
+    }
+
+    console.log(isCheck);
+  };
   return (
     <div>
       <div style={{ overflowX: "auto", borderRadius: "10px", width: "100%" }}>
@@ -8,9 +32,11 @@ const Expenses_table = ({ data, func_select }) => {
           <tr>
             <th>
               <label className="container_input">
-                <input
-                  type="checkbox"
-                  onChange={() => setcheckedAll(!checkedAll)}
+                <CheckBox
+                  type={"checkbox"}
+                  name="selectAll"
+                  handleClick={handleSelectAll}
+                  isChecked={isCheckAll}
                 />
                 <span className="checkmark"></span>
               </label>
@@ -46,12 +72,13 @@ const Expenses_table = ({ data, func_select }) => {
               <tr>
                 <td>
                   <label className="container_input">
-                    {checkedAll ? (
-                      <input type="checkbox" checked={true} />
-                    ) : (
-                      <input type="checkbox" />
-                    )}
-                    <input type="checkbox" checked={""} />
+                    <CheckBox
+                      type={"checkbox"}
+                      name={item.name}
+                      id={item.id}
+                      handleClick={handleClick}
+                      isChecked={isCheck.includes(item.id)}
+                    />
                     <span className="checkmark"></span>
                   </label>
                 </td>
