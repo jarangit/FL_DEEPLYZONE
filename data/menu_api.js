@@ -2,11 +2,13 @@ export const menu_admin_feature = [
   {
     name: "Product Booster",
     link: "/admin/feature/product_booster",
+    icon: "booster_tunder",
     sub: [],
   },
   {
     name: "Taking Sales",
     link: "/admin/feature/taking_sales",
+    icon: "sku_icon",
     sub: [],
   },
 ];

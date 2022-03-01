@@ -135,6 +135,7 @@
   text-align: center;
   cursor: pointer;
   position: relative;
+  padding: 5px 0;
 }
 .sideBar_icon_item {
   padding: 0 3px;
@@ -145,7 +146,7 @@
 }
 .sideBar_menu_item > a > p {
   width: 100%;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 .sideBar_menu_item:hover ,.sideBar_menu_item.active {
   background-color: var(--orange);
@@ -158,6 +159,16 @@
   background-color: white;
   color: var(--orange);
 }
+
+/* .sideBar_menu_item::before{
+  content: "sss";
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+
+
 .sideBar_sku {
   width: 100%;
 
@@ -165,14 +176,6 @@
 }
 
 /* Before item of menu */
-.product_booster::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\10f007";
-  position: absolute;
-  left: 2px;
-}
-
 .sideBar_sku {
   background-color: var(--blue);
   position: absolute;
@@ -184,4 +187,32 @@
   text-align: center;
   align-items: center;
   top: 5px;
+}
+
+.sideBar_menu_item:hover ,.sideBar_menu_item.active .booster_tunder::before{
+  color: rgb(255, 255, 255);
+}
+.booster_tunder::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e7";
+  position: absolute;
+  color: #1093b2;
+  font-size: 22px;
+  left: 0.5em;
+  z-index: 3;
+}
+
+.sku_icon::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "SKU";
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  left: 0.5em;
+  background-color: var(--blue);
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 3;
 }
