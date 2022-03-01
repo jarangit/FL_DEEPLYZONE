@@ -266,7 +266,7 @@ display: none;
   outline: none;
 }
 
-.expenses_pagination_select::before {
+/* .expenses_pagination_select::before {
   content: "\f461";
   color: #ff0000;
   right: 0;
@@ -276,7 +276,7 @@ display: none;
   font-family: "Font Awesome 5 Free";
   cursor: pointer;
   z-index: 5;
-}
+} */
 
 
 .expenses_pagination_bux_paginate{
