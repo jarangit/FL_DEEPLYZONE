@@ -23,7 +23,7 @@ const AdminLayout = ({ children }) => {
   return (
     <div>
       <AdminMenu />
-      <div style={{ display: "flex", narginTop: "76px", maxWidth: "1200px" }}>
+      <div style={{ display: "flex", narginTop: "76px",  }}>
         <SideBar data={data_side_menu} />
         <div className="addmin_container">{children}</div>
       </div>

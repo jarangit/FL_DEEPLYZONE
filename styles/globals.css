@@ -61,10 +61,13 @@ li {
   flex-wrap: wrap;
 }
 .addmin_container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   padding: 20px 20px;
-  margin-top: 50px;
-  margin-left: 40px;
+  /* margin-top: 50px;
+  margin-left: 40px; */
+  margin: 50px auto;
+
 }
 
 .index_img {
