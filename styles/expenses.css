@@ -3,7 +3,7 @@
   font-size: 24px;
   margin-bottom: 10px;
 }
-.expenses_table > tr > th {
+.expenses_table  thead > tr > th {
   background-color: var(--blue);
 }
 
@@ -15,14 +15,14 @@
 .expenses_table > tr:first-child {
   background-color: var(--blue);
 }
-.expenses_table > tr > th:first-child {
+.expenses_table thead > tr > th:first-child {
   border-radius: 15px 0px 0px 15px;
 }
-.expenses_table > tr > th:last-child {
+.expenses_table thead > tr > th:last-child {
   border-radius: 0 15px 15px 0;
 }
 
-.expenses_table > tr > th {
+.expenses_table  thead> tr > th {
   background-color: var(--blue);
   padding: 10px 0;
   border: none;
@@ -30,7 +30,7 @@
   text-align: center;
   min-width: 150px;
 }
-.expenses_table > tr > td {
+.expenses_table  tbody > tr > td {
   text-align: center;
   padding: 5px 0;
   border-bottom: 1px solid var(--lightGray);

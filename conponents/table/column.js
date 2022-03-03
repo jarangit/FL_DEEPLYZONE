@@ -1,14 +1,16 @@
+import React from "react";
+
 export const COLUMNS = [
   // {
   //   Header: "Id",
   //   accessor: "id",
   // },
   {
-    Header: "Name",
+    Header: "ชื่อสินค้า",
     accessor: "name",
   },
   {
-    Header: "Price",
+    Header: "ราคาสินค้า",
     accessor: (data) => (
       <div>
         {data.price}
@@ -29,11 +31,11 @@ export const COLUMNS = [
   //   accessor: "price_rate",
   // },
   {
-    Header: "Rate",
+    Header: "คะแนนสินค้า",
     accessor: "rate",
   },
   {
-    Header: "Sales",
+    Header: "ยอดขาย",
     accessor: (data) => (
       <div>
         {data.sales}
@@ -54,15 +56,15 @@ export const COLUMNS = [
   //   accessor: "sales_rate",
   // },
   {
-    Header: "Category",
+    Header: "หมวดหมู้สินค้า",
     accessor: "category",
   },
   {
-    Header: "Like",
+    Header: "การกดถูกใจ",
     accessor: "like",
   },
   {
-    Header: "Rate Review",
+    Header: "คะแนนรีวิว",
     accessor: (data) =>
       data.rate_review.map((item, key) => (
         <div key={key} className="taking_table_review">
@@ -73,11 +75,11 @@ export const COLUMNS = [
       )),
   },
   {
-    Header: "Address",
+    Header: "ที่ต้องร้านค้า",
     accessor: "address",
   },
   {
-    Header: "Status",
-    accessor: "status",
+    Header: "สถานะ",
+    accessor: "status"
   },
 ];

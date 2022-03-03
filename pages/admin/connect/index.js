@@ -25,40 +25,45 @@ const ConnectPage = () => {
       </div>
 
       <table className="connect_table">
-        <tr>
-          <th>ช่องทาง</th>
-          <th>สถานะ</th>
-          <th>วันหมดอายุ</th>
-          <th>ดำเนินการ</th>
-        </tr>
-        <tr>
-          <td>
-            <img
-              style={{ maxWidth: "100px" }}
-              src="https://www.wogi.sg/uploads/brands/123/list_logo.jpg"
-              alt=""
-            />
-          </td>
-          <td>
-            <div>
-              <input
-                className="icon_toggle"
-                type={"checkbox"}
-                id="check_toggle"
+        <thead>
+          <tr>
+            <th>ช่องทาง</th>
+            <th>สถานะ</th>
+            <th>วันหมดอายุ</th>
+            <th>ดำเนินการ</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <img
+                style={{ maxWidth: "100px" }}
+                src="https://www.wogi.sg/uploads/brands/123/list_logo.jpg"
+                alt=""
               />
-              <label htmlFor="check_toggle">เชื่อต่อ</label>
-            </div>
-          </td>
-          <td>31-12-2022</td>
-          <td>
-            <FontAwesomeIcon
-              icon={faExclamation}
-              size="lg"
-              color="#354767"
-              className="connect_icon_exclamation"
-            />
-          </td>
-        </tr>
+            </td>
+            <td>
+              <div>
+                <input
+                  className="icon_toggle"
+                  type={"checkbox"}
+                  id="check_toggle"
+                />
+                <label htmlFor="check_toggle">เชื่อต่อ</label>
+              </div>
+            </td>
+            <td>31-12-2022</td>
+            <td>
+              <FontAwesomeIcon
+                icon={faExclamation}
+                size="lg"
+                color="#354767"
+                className="connect_icon_exclamation"
+              />
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

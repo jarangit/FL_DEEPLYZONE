@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import Progress_bar from "../../../../conponents/items/Progress_bar";
 import {
   faEye,
@@ -9,8 +9,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
 import Calendar from "../../../../conponents/items/calendar/Calendar";
-
-
 
 const ProductBooster_page = () => {
   const [openDatePicker, setopenDatePicker] = useState(false);
@@ -32,19 +30,20 @@ const ProductBooster_page = () => {
           </div>
           <div className="prod_booster_box_title_right_item">
             <div className="prod_booster_input_date">
-              <div className="jr_input_date"
-                onClick={()=> setopenDatePicker(!openDatePicker)}
+              <div
+                className="jr_input_date"
+                onClick={() => setopenDatePicker(!openDatePicker)}
               >
                 <span>
                   <FontAwesomeIcon icon={faCalendarAlt} className="jr_icon" />
                 </span>
                 ปปปป/ดด/วว
               </div>
-                {openDatePicker && (
-                  <div ref={ref}>
-                    <Calendar />
-                  </div>
-                )}
+              {openDatePicker && (
+                <div ref={ref}>
+                  <Calendar />
+                </div>
+              )}
             </div>
           </div>
           <div className="prod_booster_box_title_right_item">
@@ -117,21 +116,24 @@ const ProductBooster_page = () => {
       </div>
 
       <table className="prod_booster_table">
-        <tr>
-          <th>รอยเวลา</th>
-          <th>สินค้า</th>
-          <th>จำนวนผู้เข้าชม</th>
-          <th>สถานะ</th>
-          <th>ข้อมูล</th>
-        </tr>
-
-        <tr>
-          <td>30-3-2022</td>
-          <td>Product1</td>
-          <td>30</td>
-          <td>Online</td>
-          <td>-</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>รอยเวลา</th>
+            <th>สินค้า</th>
+            <th>จำนวนผู้เข้าชม</th>
+            <th>สถานะ</th>
+            <th>ข้อมูล</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>30-3-2022</td>
+            <td>Product1</td>
+            <td>30</td>
+            <td>Online</td>
+            <td>-</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

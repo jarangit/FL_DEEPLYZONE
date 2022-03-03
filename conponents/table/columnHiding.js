@@ -50,7 +50,6 @@ const ColumnHiding = () => {
       ]);
     }
   );
-  console.log(selectedFlatRows.map((d) => d.original));
 
   return (
     <div>
@@ -63,9 +62,8 @@ const ColumnHiding = () => {
               <span className="checkmark_left"></span>
             </label>
           </li>
-          {allColumns.map((col) => (
-            <li className="taking_filter_item">
-              {console.log(col)}
+          {allColumns.map((col, key) => (
+            <li key={key} className="taking_filter_item">
               <label className="container_input_text">
                 {typeof col.Header !== "function" ? col.Header : col.id}
                 <input type="checkbox" {...col.getToggleHiddenProps()} />
@@ -90,46 +88,57 @@ const ColumnHiding = () => {
         </ul>
       </div>
       <table {...getTableProps()} className={"taking_filter_table"}>
-        {console.log(rows)}
         <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps()}>{column.render("Header")}</th>
-              ))}
-            </tr>
+          {headerGroups.map((headerGroup, key) => (
+            <React.Fragment key={key}>
+              <tr {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map((column, key) => (
+                  <th key={key} {...column.getHeaderProps()}>
+                    {column.render("Header")}
+                  </th>
+                ))}
+              </tr>
+            </React.Fragment>
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
+          {rows.map((row, key) => {
             prepareRow(row);
             return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => (
-                  <React.Fragment>
-                    {console.log(row.isSelected)}
-                    <td {...cell.getCellProps()}>
-                      {cell.render("Cell")}
-                      {cell.value === "pending" ? (
-                        <div className="taking_table_status">
-                          <div>
-                            <button disabled={row.isSelected ? false : true}>
-                              ข้อมูล
-                            </button>
+              <React.Fragment key={key}>
+                <tr key={key} {...row.getRowProps()}>
+                  {row.cells.map((cell, key) => (
+                    <React.Fragment key={key}>
+                      <td
+                        key={key}
+                        {...cell.getCellProps()}
+                        style={{
+                          color:
+                            cell.value === "กำลังดำเนินการ" ? "green" : "black",
+                        }}
+                      >
+                        {cell.render("Cell")}
+                        {cell.value === "กำลังดำเนินการ" ? (
+                          <div className="taking_table_status">
+                            <div>
+                              <button disabled={row.isSelected ? false : true}>
+                                ข้อมูล
+                              </button>
+                            </div>
+                            <div>
+                              <button disabled={row.isSelected ? false : true}>
+                                ลบ
+                              </button>
+                            </div>
                           </div>
-                          <div>
-                            <button disabled={row.isSelected ? false : true}>
-                              ลบ
-                            </button>
-                          </div>
-                        </div>
-                      ) : (
-                        ""
-                      )}
-                    </td>
-                  </React.Fragment>
-                ))}
-              </tr>
+                        ) : (
+                          ""
+                        )}
+                      </td>
+                    </React.Fragment>
+                  ))}
+                </tr>
+              </React.Fragment>
             );
           })}
         </tbody>

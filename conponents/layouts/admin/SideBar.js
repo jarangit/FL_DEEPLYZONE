@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
+import useOutsideClick from '../../items/clickOutside/useOutsideClick'
 const SideBar = ({ data }) => {
   const [open, setopen] = useState(false);
   const { asPath } = useRouter();
   console.log(asPath);
+  const ref = useRef(null);
+
+  useOutsideClick(ref, () => {
+    if (open) setopen(false);
+  });
   return (
-    <div className="sideBar">
+    <div className="sideBar" ref={ref}>
       <div className={`sideBar_box ${open ? "active" : ""}`}>
         <div className="sideBar_item">
           <FontAwesomeIcon
@@ -32,7 +37,7 @@ const SideBar = ({ data }) => {
                   >
                     <Link href={item.link}>
                       <a>
-                        <span className={ item.icon }/>
+                        <span className={item.icon} />
                         <p>{item.name}</p>
                       </a>
                     </Link>

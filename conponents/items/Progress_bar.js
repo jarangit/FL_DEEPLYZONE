@@ -23,7 +23,7 @@ const Progress_bar = ({ bgcolor, progress, height }) => {
   const text_value = {
     fontSize: "12px",
     position: "absolute",
-    top: "-15px;",
+    top: "-3px",
     right: "0",
   };
 

@@ -14,12 +14,16 @@
 .view_p_menu_item {
   background-color: var(--blue);
   color: white;
-  min-width: 150px;
+  max-width: 150px;
+  width: 100%;
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* GRAPH RANK */

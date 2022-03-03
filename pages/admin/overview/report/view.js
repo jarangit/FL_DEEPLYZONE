@@ -55,18 +55,18 @@ const View_page = () => {
             style={{ backgroundColor: "#004AAD" }}
             className="view_p_menu_item"
           >
-            item
+            ยอดขายสุทธิ
           </li>
           <li
             style={{ backgroundColor: "#8c52ff" }}
             className="view_p_menu_item"
           >
-            item
+            คำสั่งซื้อ
           </li>
-          <li className="view_p_menu_item">item</li>
-          <li className="view_p_menu_item">item</li>
-          <li className="view_p_menu_item">item</li>
-          <li className="view_p_menu_item">item</li>
+          <li className="view_p_menu_item">คำสั่งซื้อที่ยกเลิก</li>
+          <li className="view_p_menu_item">จำนวนผู้เยี่ยมชม</li>
+          <li className="view_p_menu_item">ยอดชมสินค้า</li>
+          <li className="view_p_menu_item">ยอดเฉลี่ยต่อคำสั่งซื้อ</li>
         </ul>
       </div>
 

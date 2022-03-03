@@ -32,7 +32,7 @@ export const data_product_taking = [
       },
     ],
     address: "Bankok | Thailand",
-    status: "pending",
+    status: "กำลังดำเนินการ",
   },
   {
     id: "2",
@@ -68,7 +68,7 @@ export const data_product_taking = [
       },
     ],
     address: "Bankok | Thailand",
-    status: "pending",
+    status: "กำลังดำเนินการ",
   },
   {
     id: "3",
@@ -104,6 +104,6 @@ export const data_product_taking = [
       },
     ],
     address: "Bankok | Thailand",
-    status: "pending",
+    status: "กำลังดำเนินการ",
   },
 ];
