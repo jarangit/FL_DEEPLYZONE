@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 
+@font-face {
+  font-family: "GothamRoundedBold";
+  src: url("../public/font//GothamRounded-MediumItalic.otf");
+  font-size: 24px;
+}
+@font-face {
+  font-family: "DBAdmanRounded";
+  src: url("../public/font/DB\ AdmanRounded\ X\ v3.2.ttf");
+  font-size: 24px;
+
+
+}
 :root {
   --blue: #00c3cb;
   --orange: #f28f0b;
@@ -12,14 +24,16 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Prompt", sans-serif;
+  font-family: "DBAdmanRounded", GothamRoundedBold;
+  font-size: 1.1rem;
+
 }
 button,
 input,
 option,
 select,
 table {
-  font-family: "Prompt", sans-serif;
+  font-family: "DBAdmanRounded", GothamRoundedBold;
 }
 textarea:focus,
 input:focus {
@@ -66,7 +80,6 @@ li {
   padding: 20px 20px;
   /* margin-top: 50px; */
   margin: 50px auto;
-
 }
 
 .index_img {
@@ -77,7 +90,6 @@ li {
 @media only screen and (max-width: 1300px) {
   .addmin_container {
     margin: 50px 40px;
-  
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -166,8 +178,7 @@ input[type="checkbox"].icon_toggle:checked + label {
   margin-left: 10px;
   cursor: pointer;
 }
-.jr_color_blue{
+.jr_color_blue {
   color: var(--blue);
 }
 /* INPUT */
-
