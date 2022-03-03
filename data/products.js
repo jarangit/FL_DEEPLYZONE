@@ -12,23 +12,23 @@ export const data_product_taking = [
     rate_review: [
       {
         star: 5,
-        socre: 1242,
+        score: 1242,
       },
       {
         star: 4,
-        socre: 1442,
+        score: 1442,
       },
       {
         star: 3,
-        socre: 122,
+        score: 122,
       },
       {
         star: 2,
-        socre: 2,
+        score: 2,
       },
       {
         star: 1,
-        socre: 12,
+        score: 12,
       },
     ],
     address: "Bankok | Thailand",
@@ -48,23 +48,23 @@ export const data_product_taking = [
     rate_review: [
       {
         star: 5,
-        socre: 342,
+        score: 342,
       },
       {
         star: 4,
-        socre: 34,
+        score: 34,
       },
       {
         star: 3,
-        socre: 23,
+        score: 23,
       },
       {
         star: 2,
-        socre: 234,
+        score: 234,
       },
       {
         star: 1,
-        socre: 4444,
+        score: 4444,
       },
     ],
     address: "Bankok | Thailand",
@@ -84,23 +84,23 @@ export const data_product_taking = [
     rate_review: [
       {
         star: 5,
-        socre: 234235,
+        score: 234235,
       },
       {
         star: 4,
-        socre: 234234,
+        score: 234234,
       },
       {
         star: 3,
-        socre: 444,
+        score: 444,
       },
       {
         star: 2,
-        socre: 233,
+        score: 233,
       },
       {
         star: 1,
-        socre: 23,
+        score: 23,
       },
     ],
     address: "Bankok | Thailand",

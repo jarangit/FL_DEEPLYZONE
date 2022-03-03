@@ -9,13 +9,29 @@ import { data_product_taking } from "../../../../data/products";
 import Calendar from "../../../../conponents/items/calendar/Calendar";
 import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
 import TalkingSkuTable from "../../../../conponents/table/talkingSkuTable";
+import ColumnHiding from "../../../../conponents/table/columnHiding";
 const TakingSales_page = () => {
   const [openDatePicker, setopenDatePicker] = useState(false);
+  const [data, setdata] = useState(data_product_taking);
   // console.log(data_product_taking);
   const ref = useRef(null);
 
+  function onChecked(e) {
+    if (e) {
+      console.log(e.target.name);
+      const del = data_product_taking.forEach((ob) => {
+        delete ob[e.target.name];
+      });
+      setdata(del);
+    }
+    console.log(data);
+  }
 
+  // useEffect(() => {
+  //   setdata(data_product_taking);
+  // }, [data])
 
+  console.log(data);
   useOutsideClick(ref, () => {
     if (openDatePicker) setopenDatePicker(false);
   });
@@ -55,84 +71,10 @@ const TakingSales_page = () => {
           <p>รายงาน</p>
         </button>
       </div>
-
-      <div className="taking_box_filter">
-        <p>ข้อมูลติดตาม</p>
-        <ul>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              ชื่อสินค้า
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              ราคาสินค้า
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              คะแนนสินค้า
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              ยอดขาย
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              หมวดหมู่สินค้า
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              การกดถูกใจ
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              คะแนนรีวิว
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <label className="container_input_text">
-              ที่ตั้งร้ายค้า
-              <input type="checkbox" />
-              <span className="checkmark_left"></span>
-            </label>
-          </li>
-          <li className="taking_filter_item">
-            <button className="jr_but_gray">ลบสินค้า</button>
-          </li>
-          <li className="taking_filter_item">
-            <button
-              style={{ fontSize: "16px" }}
-              className="taking_filter_but_advance"
-            >
-              <span>
-                <FontAwesomeIcon icon={faSliders} />
-              </span>
-              ค้าหาขั้นสูง
-            </button>
-          </li>
-        </ul>
+      <div style={{marginTop: "20px"}} >
+        <p>ข้อมูลการติดตาม</p>
+        <ColumnHiding />
       </div>
-
-      <TalkingSkuTable data = {data_product_taking} />
     </div>
   );
 };

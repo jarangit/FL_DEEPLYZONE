@@ -65,17 +65,17 @@
   width: 100%;
   border-collapse: collapse;
 }
-.taking_filter_table > tr:first-child {
+.taking_filter_table  thead > tr:first-child {
   background-color: var(--blue);
 }
-.taking_filter_table > tr > th:first-child {
+.taking_filter_table thead> tr > th:first-child {
   border-radius: 15px 0px 0px 15px;
 }
-.taking_filter_table > tr > th:last-child {
+.taking_filter_table thead> tr > th:last-child {
   border-radius: 0 15px 15px 0;
 }
 
-.taking_filter_table > tr > th {
+.taking_filter_table thead> tr > th {
   background-color: var(--blue);
   padding: 10px 0;
   border: none;
@@ -83,13 +83,13 @@
   text-align: center;
   min-width: 100px;
 }
-.taking_filter_table > tr > td {
+.taking_filter_table tbody> tr > td {
   text-align: center;
   padding: 20px 0;
   border-bottom: 1px solid var(--lightGray);
   position: relative;
 }
-.taking_filter_table.active > tr > td{
+.taking_filter_table.active tbody> tr > td{
   background-color: red;
 }
 .price_change {
