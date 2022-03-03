@@ -36,12 +36,12 @@ const AdminMenu = () => {
               </Link>
             </li>
             <li>
-              <Link href={"/admin/feature"}>
+              <Link href={"/admin/feature/product_booster"}>
                 <A>Feature</A>
               </Link>
             </li>
             <li>
-              <Link href={"/admin/overview"}>
+              <Link href={"/admin/overview/report/view"}>
                 <A>ภาพรวม</A>
               </Link>
             </li>

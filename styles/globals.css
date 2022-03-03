@@ -4,14 +4,10 @@
 @font-face {
   font-family: "GothamRoundedBold";
   src: url("../public/font//GothamRounded-MediumItalic.otf");
-  font-size: 24px;
 }
 @font-face {
   font-family: "DBAdmanRounded";
   src: url("../public/font/DB\ AdmanRounded\ X\ v3.2.ttf");
-  font-size: 24px;
-
-
 }
 :root {
   --blue: #00c3cb;
@@ -24,8 +20,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "DBAdmanRounded", GothamRoundedBold;
-  font-size: 1.1rem;
+  font-family: 'Prompt', sans-serif;
 
 }
 button,
@@ -33,7 +28,7 @@ input,
 option,
 select,
 table {
-  font-family: "DBAdmanRounded", GothamRoundedBold;
+  font-family: 'Prompt', sans-serif;
 }
 textarea:focus,
 input:focus {
