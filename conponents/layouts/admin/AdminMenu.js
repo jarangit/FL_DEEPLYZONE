@@ -52,53 +52,6 @@ const AdminMenu = () => {
       <div className="admin_menu_right">
         <ul>
           <li className="admin_menu_item">
-            <Link href={"#"}>
-              <a>
-                <FontAwesomeIcon icon={faBell} size="lg" color="#ffffff" />
-              </a>
-            </Link>
-            <ul className="admin_menu_dropdown">
-              <div>Notifications</div>
-              <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCircle}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                item
-              </li>
-              <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCircle}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                item
-              </li>
-              <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCircle}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                item
-              </li>
-
-              <div
-                style={{
-                  fontSize: "12px",
-                  textAlign: "center",
-                  color: "orange",
-                }}
-              >
-                การแจ้งเดือนทั้งหมด
-              </div>
-            </ul>
-          </li>
-          <li className="admin_menu_item">
             <Link href={"/admin"}>
               <a>
                 <FontAwesomeIcon
@@ -113,35 +66,108 @@ const AdminMenu = () => {
             <ul className="admin_menu_dropdown">
               <div>สลับร้านค้า</div>
               <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCircle}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                Store 1
+                <Link href={"/admin"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faCircle}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    Store 1
+                  </a>
+                </Link>
               </li>
               <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCircle}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                Store 1
+                <Link href={"/admin"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faCircle}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    Store 1
+                  </a>
+                </Link>
               </li>
               <div>
-                <span>
-                  <FontAwesomeIcon
-                    icon={faPlusCircle}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                เพิ่มร้านค้า
+                <Link href={"/admin"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faPlusCircle}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    เพิ่มร้านค้า
+                  </a>
+                </Link>
               </div>
             </ul>
           </li>
           <li className="admin_menu_item">
+            <Link href={"#"}>
+              <a>
+                <FontAwesomeIcon icon={faBell} size="lg" color="#ffffff" />
+              </a>
+            </Link>
+            <ul className="admin_menu_dropdown">
+              <div>Notifications</div>
+              <li className="admin_menu_dropdown_item">
+                <Link href={"/admin"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faCircle}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    item
+                  </a>
+                </Link>
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <Link href={"/admin"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faCircle}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    item
+                  </a>
+                </Link>
+              </li>
+              <li className="admin_menu_dropdown_item">
+                <Link href={"/admin"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faCircle}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    item
+                  </a>
+                </Link>
+              </li>
+
+              <div
+                style={{
+                  fontSize: "12px",
+                  textAlign: "center",
+                  color: "orange",
+                }}
+              >
+                <Link href={"/admin"}>
+                  <a>การแจ้งเดือนทั้งหมด</a>
+                </Link>
+              </div>
+            </ul>
+          </li>
+          {/* <li className="admin_menu_item">
             <Link href={"#"}>
               <a>
                 <img
@@ -151,7 +177,7 @@ const AdminMenu = () => {
                 />
               </a>
             </Link>
-          </li>
+          </li> */}
           <li className="admin_menu_item">
             <Link href={"#"}>
               <a>
@@ -188,13 +214,17 @@ const AdminMenu = () => {
                 </Link>
               </li>
               <li className="admin_menu_dropdown_item">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faSignOut}
-                    className="dropdown_item_icon"
-                  />
-                </span>
-                ออกจากระบบ
+                <Link href={"/"}>
+                  <a>
+                    <span>
+                      <FontAwesomeIcon
+                        icon={faSignOut}
+                        className="dropdown_item_icon"
+                      />
+                    </span>
+                    ออกจากระบบ
+                  </a>
+                </Link>
               </li>
             </ul>
           </li>
