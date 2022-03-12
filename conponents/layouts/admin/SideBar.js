@@ -6,12 +6,20 @@ import { useRouter } from "next/router";
 import useOutsideClick from "../../items/clickOutside/useOutsideClick";
 import { AppProviderContext } from "../../../appState/appProvider";
 const SideBar = ({ data }) => {
-  const [ openSideMenuAdmin, setopenSideMenuAdmin ] = useContext(AppProviderContext);
+  const [openSideMenuAdmin, setopenSideMenuAdmin] =
+    useContext(AppProviderContext);
   const [open, setopen] = useState(false);
   const { asPath } = useRouter();
   console.log(asPath);
   const ref = useRef(null);
 
+  function onClickOpenSideMenu() {
+    if (asPath === "/admin") {
+      setopenSideMenuAdmin(false);
+    } else {
+      setopenSideMenuAdmin(!openSideMenuAdmin);
+    }
+  }
   useOutsideClick(ref, () => {
     if (openSideMenuAdmin) setopenSideMenuAdmin(false);
   });
@@ -23,7 +31,7 @@ const SideBar = ({ data }) => {
             icon={faBars}
             size="lg"
             color="#ffffff"
-            onClick={() => setopenSideMenuAdmin(!openSideMenuAdmin)}
+            onClick={onClickOpenSideMenu}
             style={{ cursor: "pointer" }}
           />
         </div>

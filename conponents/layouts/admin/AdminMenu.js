@@ -16,7 +16,6 @@ import A from "../../custormLink/Atag";
 import Link from "../../custormLink/custormLink";
 const AdminMenu = () => {
   const { asPath } = useRouter();
-  console.log(asPath);
 
   return (
     <div className="admin_menu">
