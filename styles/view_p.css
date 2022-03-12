@@ -30,9 +30,7 @@
 .view_p_box_ranking {
   width: 100%;
   display: flex;
-  /* background-color: gray; */
   gap: 20px;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
 
 }
@@ -52,7 +50,7 @@
 .view_p_box_menu_item {
   border-bottom: 2px solid transparent;
 }
-.view_p_box_menu_item.active{
+.view_p_box_menu_item:hover > a{
   border-bottom: 2px solid var(--orange);
   color: var(--orange);
 }
