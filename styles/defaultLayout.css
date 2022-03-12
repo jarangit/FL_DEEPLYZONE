@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .def_logo_img {

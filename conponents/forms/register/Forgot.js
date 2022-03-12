@@ -12,13 +12,13 @@ const ForgotForm = () => {
           />
         </div>
         <div className="login_item">
-          <h3 className="login_title">กู้คืนรหัสผ่านของคุณ</h3>
+          <h3 className="login_title">ตั้งรหัสผ่านใหม่</h3>
         </div>
-        <div className="login_item">
-          <label>อีเมล</label>
-          <input type="text" placeholder="อีเมล" />
+        <div className="login_item ">
+          <label>กรุณระบุอีเมล หรือหมายเลขโทรศัพท์ที่คุฯใช้ลงทะเบียน</label>
+          <input type="text" placeholder="อีเมล/หมายเลขโทรศัพท์" />
         </div>
-        <button className="login_but">รับลิ้งกู้คืนทางอีเมล</button>
+        <button className="login_but">ตั้งรหัสผ่านใหม่</button>
       </form>
     </div>
   );

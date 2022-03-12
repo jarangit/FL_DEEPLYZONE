@@ -28,9 +28,9 @@ const LoginForm = () => {
           </div>
           <div className="login_fogotPass">
             <strong>
-            <Link href="/register/forgot">
-              <a>ลืมรหัสผ่าน</a>
-            </Link>
+              <Link href="/register/forgot">
+                <a>ลืมรหัสผ่าน</a>
+              </Link>
             </strong>
           </div>
         </div>
@@ -38,9 +38,10 @@ const LoginForm = () => {
         <button className="login_but">เข้าสู่ระบบ</button>
 
         <div className="login_newUser">
-          <div>เพิ่งเคยใช้งาน Deeply</div>
           <strong>
-            <a href="/">สมัครใหม่</a>
+            <a href="/register/signup">
+              <div>เพิ่งเคยใช้งาน Deeply</div>สมัครใหม่
+            </a>
           </strong>
         </div>
       </form>

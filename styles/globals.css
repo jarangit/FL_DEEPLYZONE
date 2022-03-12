@@ -176,4 +176,8 @@ input[type="checkbox"].icon_toggle:checked + label {
 .jr_color_blue {
   color: var(--blue);
 }
+
+.jr_fs12{
+  font-size: 12px;
+}
 /* INPUT */

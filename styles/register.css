@@ -27,7 +27,7 @@
   margin-top: 5px;
 }
 .login_item > label {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--navy);
 }
@@ -64,8 +64,11 @@
   font-size: 18px;
   color: white;
   border-radius: 3px;
+  cursor: pointer;
 }
-
+.login_but.disable{
+  background-color: rgb(133, 133, 133);
+}
 .login_newUser {
   text-align: center;
 }

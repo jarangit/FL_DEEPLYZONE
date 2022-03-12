@@ -43,16 +43,16 @@ const DefualtMenuBar = () => {
           <li className="def_menu_item">
             <a href="/">ติดต่อเรา</a>
           </li>
-          <li className="def_menu_item">
+          {/* <li className="def_menu_item">
             <img
               src="https://icons.iconarchive.com/icons/wikipedia/flags/1024/TH-Thailand-Flag-icon.png"
               alt=""
               className="def_menu_img_th"
             />
-          </li>
+          </li> */}
           <li className="def_menu_item">
             <Link href="/register/login">
-              <a  className="def_menu_item_limk">ลงชื่อเข้าใช้</a>
+              <a  className="def_menu_item_limk">เข้าสู่ระบบ</a>
             </Link>
           </li>
           <li className="def_menu_item">

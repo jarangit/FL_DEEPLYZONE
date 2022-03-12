@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SignupForm = () => {
+  const [agree, setagree] = useState(false);
   return (
     <div>
       <form className="form_login">
@@ -25,13 +26,13 @@ const SignupForm = () => {
           <input type="password" placeholder="ยืนยันรหัสผ่าน" />
         </div>
         <div className="login_item_select">
-          <label>รู้จัก Deeply.zone จากช่องทางไหน</label>
-          <select name="socail" id="socail" className = "select_socail">
+          <label>รู้จัก DeeplyZone จากช่องทางไหน</label>
+          <select name="socail" id="socail" className="select_socail">
             <option value="">กรุณเลือก</option>
-            <option value="facebook">facebook</option>
-            <option value="youtue">youtue</option>
-            <option value="friends">friends</option>
-            <option value="other">other</option>
+            <option value="facebook">Facebook</option>
+            <option value="youtue">Youtue</option>
+            <option value="friends">เพื่อนแนะนำ</option>
+            <option value="other">อื่นๆ</option>
           </select>
         </div>
         <div className="login_item">
@@ -40,13 +41,18 @@ const SignupForm = () => {
         </div>
         <div className="login_item_checked">
           <div className="login_checkbox_agree">
-            <input type="checkbox"/>
+            <input type="checkbox" onChange={() => setagree(!agree)} />
             <label>
-              ยอมรับข้อตกลงการให้บิรการ <span>และ</span> นโยบายความเป็นส่วนตัว
+              ยอมรับข้อตกลงการให้บริการ <span>และ</span> นโยบายความเป็นส่วนตัว
             </label>
           </div>
         </div>
-        <button className="login_but">สมัครบิรการ</button>
+        <button
+          disabled={agree === true ? false : true}
+          className={`login_but  ${agree === true ? "" : "disable"}`}
+        >
+          สมัครบิรการ
+        </button>
       </form>
     </div>
   );
