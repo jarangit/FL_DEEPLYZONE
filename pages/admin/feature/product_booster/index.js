@@ -9,7 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
 import Calendar from "../../../../conponents/items/calendar/Calendar";
-
+import Link from "next/link";
 const ProductBooster_page = () => {
   const [openDatePicker, setopenDatePicker] = useState(false);
   // console.log(data_product_taking);
@@ -54,10 +54,26 @@ const ProductBooster_page = () => {
 
       <div className="prod_booster_nav">
         <ul>
-          <li className="prod_booster_nav_item">ทั้งหมด</li>
-          <li className="prod_booster_nav_item">กำลังดำเนินการ</li>
-          <li className="prod_booster_nav_item">เร็วๆนี้</li>
-          <li className="prod_booster_nav_item">หทดอายุ</li>
+          <li className="prod_booster_nav_item">
+            <Link href="/admin">
+              <a>ทั้งหมด</a>
+            </Link>
+          </li>
+          <li className="prod_booster_nav_item">
+            <Link href="/admin">
+              <a>กำลังดำเนินการ</a>
+            </Link>
+          </li>
+          <li className="prod_booster_nav_item">
+            <Link href="/admin">
+              <a>เร็วๆนี้</a>
+            </Link>
+          </li>
+          <li className="prod_booster_nav_item">
+            <Link href="/admin">
+              <a>หทดอายุ</a>
+            </Link>
+          </li>
         </ul>
         <button style={{ borderRadius: "10px" }} className="jr_but_gray">
           รายงาน

@@ -1,27 +1,29 @@
-import React, { useState, useRef } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import useOutsideClick from '../../items/clickOutside/useOutsideClick'
+import useOutsideClick from "../../items/clickOutside/useOutsideClick";
+import { AppProviderContext } from "../../../appState/appProvider";
 const SideBar = ({ data }) => {
+  const [ openSideMenuAdmin, setopenSideMenuAdmin ] = useContext(AppProviderContext);
   const [open, setopen] = useState(false);
   const { asPath } = useRouter();
   console.log(asPath);
   const ref = useRef(null);
 
   useOutsideClick(ref, () => {
-    if (open) setopen(false);
+    if (openSideMenuAdmin) setopenSideMenuAdmin(false);
   });
   return (
     <div className="sideBar" ref={ref}>
-      <div className={`sideBar_box ${open ? "active" : ""}`}>
+      <div className={`sideBar_box ${openSideMenuAdmin ? "active" : ""}`}>
         <div className="sideBar_item">
           <FontAwesomeIcon
             icon={faBars}
             size="lg"
             color="#ffffff"
-            onClick={() => setopen(!open)}
+            onClick={() => setopenSideMenuAdmin(!openSideMenuAdmin)}
             style={{ cursor: "pointer" }}
           />
         </div>

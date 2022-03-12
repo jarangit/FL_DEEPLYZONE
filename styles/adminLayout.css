@@ -109,15 +109,13 @@
   transition: all 0.2s;
   overflow: hidden;
 }
-
-.sideBar_box.active .sideBar_box{
-  background-color: red;
-  
+.sideBar_box.active .sideBar{
+  padding-left: 160px;
 }
+
 .sideBar_box.active .sideBar_menu_item {
   width: 100%;
   transition: all 0.2s;
-
 }
 
 .sideBar_menu > ul {

@@ -20,15 +20,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Prompt', sans-serif;
-
+  font-family: "Prompt", sans-serif;
 }
 button,
 input,
 option,
 select,
 table {
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 textarea:focus,
 input:focus {
@@ -62,19 +61,24 @@ li {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-.index_banner {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .addmin_container {
   max-width: 1200px;
   width: 100%;
   padding: 20px 20px;
   /* margin-top: 50px; */
-  margin: 50px auto;
+  margin-top: 50px;
+  padding-left: 20px;
+  transition: all 0.2s;
+}
+.addmin_container.active {
+  padding-left: 160px;
+  transition: all 0.2s;
+}
+.index_banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .index_img {
@@ -177,7 +181,7 @@ input[type="checkbox"].icon_toggle:checked + label {
   color: var(--blue);
 }
 
-.jr_fs12{
+.jr_fs12 {
   font-size: 12px;
 }
 /* INPUT */
