@@ -5,7 +5,7 @@
   margin-top: 20px;
   max-width: 330px;
 }
-.login_box_img{
+.login_box_img {
   text-align: center;
 }
 .login_img {
@@ -66,7 +66,7 @@
   border-radius: 3px;
   cursor: pointer;
 }
-.login_but.disable{
+.login_but.disable {
   background-color: rgb(133, 133, 133);
 }
 .login_newUser {
@@ -89,26 +89,27 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-.login_item_select{
+.login_item_select {
   font-weight: 600;
   color: var(--navy);
   font-size: 18px;
+  display: inline-block;
   position: relative;
   margin-top: 15px;
-
 }
 .login_item_select::before {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
   top: 54%;
   right: 10px;
   color: rgb(170, 170, 170);
   cursor: pointer;
+  pointer-events: none;
 }
 
-.login_checkbox_agree>label{
+.login_checkbox_agree > label {
   color: rgb(79, 79, 255);
 }
-.login_checkbox_agree>label>span{
+.login_checkbox_agree > label > span {
   color: black;
 }
