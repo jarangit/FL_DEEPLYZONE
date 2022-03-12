@@ -1,51 +1,53 @@
-.connect{
+.connect {
   flex: 4;
 }
 
-.connect_nav>ul{
+.connect_nav > ul {
   display: flex;
   padding: 0;
 }
-.connect_nav_item{
+.connect_nav_item {
   margin-right: 40px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
 }
-.connect_nav_item.active ,.connect_nav_item:hover{
+.connect_nav_item.active,
+.connect_nav_item:hover {
   color: var(--orange);
   border-bottom: 2px solid var(--orange);
 }
 
-.connect_nav2{
+.connect_nav2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.connect_nav2>ul{
+.connect_nav2 > ul {
   display: flex;
   padding: 0;
 }
 
 /* TABLE */
-.connect_table{
+.connect_table {
   margin-top: 20px;
   width: 100%;
   border: 4px solid var(--blue);
 }
-.connect_table>tr>th{
- height: 50px;
- border-bottom: 1px solid var(--blue);;
+.connect_table thead > tr > th {
+  height: 50px;
+  border-bottom: 1px solid var(--blue);
+  text-align: center;
 }
-.connect_table>tr>td{
+.connect_table tbody > tr > td {
   text-align: center;
   padding: 10px 0;
 }
 
-.connect_table >tr >th {
+.connect_table thead > tr > th {
   font-weight: 100;
 }
 
-.connect_icon_exclamation{
+.connect_icon_exclamation {
   background-color: #f3f3f3;
-  padding: 3px 15px; 
+  padding: 3px 15px;
 }

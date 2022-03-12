@@ -13,10 +13,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/router";
 import A from "../../custormLink/Atag";
-// import Link from "next/link";
 import Link from "../../custormLink/custormLink";
 const AdminMenu = () => {
-  const router = useRouter();
+  const { asPath } = useRouter();
+  console.log(asPath);
 
   return (
     <div className="admin_menu">
@@ -28,25 +28,29 @@ const AdminMenu = () => {
             className="admin_logo_img"
           />
         </div>
-        <div className="admin_menu_box_left_item">
-          <ul>
-            <li>
-              <Link href={"/admin"}>
-                <A>DeeplyZone</A>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/admin/feature/product_booster"}>
-                <A>Feature</A>
-              </Link>
-            </li>
-            <li>
-              <Link href={"/admin/overview/report/view"}>
-                <A>ภาพรวม</A>
-              </Link>
-            </li>
-          </ul>
-        </div>
+        {asPath !== "/admin" ? (
+          <div className="admin_menu_box_left_item">
+            <ul>
+              <li>
+                <Link href={"/admin"}>
+                  <A>DeeplyZone</A>
+                </Link>
+              </li>
+              <li>
+                <Link href={"/admin/feature/product_booster"}>
+                  <A>Feature</A>
+                </Link>
+              </li>
+              <li>
+                <Link href={"/admin/overview/report/view"}>
+                  <A>ภาพรวม</A>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
 
       <div className="admin_menu_right">

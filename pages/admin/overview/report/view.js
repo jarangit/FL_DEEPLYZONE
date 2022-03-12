@@ -1,4 +1,4 @@
-import React, { useState , useRef} from "react";
+import React, { useState, useRef } from "react";
 import BarChart from "../../../../conponents/charts/BarCharts";
 import LineChart from "../../../../conponents/charts/LineChart";
 import LineFillChart from "../../../../conponents/charts/LineFillCharts";
@@ -7,6 +7,7 @@ import Calendar from "../../../../conponents/items/calendar/Calendar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import useOutsideClick from "../../../../conponents/items/clickOutside/useOutsideClick";
+import Link from "next/link";
 const View_page = () => {
   const [show_salesChart, setshow_salesChart] = useState(true);
   const [openDatePicker, setopenDatePicker] = useState(false);
@@ -15,10 +16,10 @@ const View_page = () => {
   useOutsideClick(ref, () => {
     if (openDatePicker) setopenDatePicker(false);
   });
-  
+
   return (
     <div className="view_p">
-      <div style={{display: "flex"}}>
+      <div style={{ display: "flex" }}>
         <div className="prod_booster_box_title_right_item">
           <p>ช่วงเวลาของข้อมล</p>
         </div>
@@ -49,19 +50,25 @@ const View_page = () => {
             className="view_p_menu_item"
             onClick={() => setshow_salesChart(!show_salesChart)}
           >
-            ยอดขาย
+            <Link href="/admin">
+              <a>ยอดขาย</a>
+            </Link>
           </li>
           <li
             style={{ backgroundColor: "#004AAD" }}
             className="view_p_menu_item"
           >
-            ยอดขายสุทธิ
+            <Link href="/admin">
+              <a>ยอดขายสุทธิ</a>
+            </Link>
           </li>
           <li
             style={{ backgroundColor: "#8c52ff" }}
             className="view_p_menu_item"
           >
-            คำสั่งซื้อ
+            <Link href="/admin">
+              <a>คำสั่งซื้อ</a>
+            </Link>
           </li>
           <li className="view_p_menu_item">คำสั่งซื้อที่ยกเลิก</li>
           <li className="view_p_menu_item">จำนวนผู้เยี่ยมชม</li>
@@ -87,9 +94,21 @@ const View_page = () => {
         <div className="view_p_box_ranking_graph">
           <p>จัดอันดับสินค้า</p>
           <ul>
-            <li className="view_p_box_menu_item active">ยอดขาย</li>
-            <li className="view_p_box_menu_item">จำนวนที่ขายได้</li>
-            <li className="view_p_box_menu_item">ยอดขายสินค้า</li>
+            <li className="view_p_box_menu_item active">
+              <Link href={"/admin"}>
+                <a>ยอดขาย</a>
+              </Link>
+            </li>
+            <li className="view_p_box_menu_item">
+              <Link href={"/admin"}>
+                <a>จำนวนที่ขายได้</a>
+              </Link>
+            </li>
+            <li className="view_p_box_menu_item">
+              <Link href={"/admin"}>
+                <a>ยอดขายสินค้า</a>
+              </Link>
+            </li>
           </ul>
 
           <div className="view_p_ranking_graph">
@@ -99,9 +118,21 @@ const View_page = () => {
         <div className="view_p_box_ranking_graph">
           <p>จัดอันดับสินค้า</p>
           <ul>
-            <li className="view_p_box_menu_item active">ยอดขาย</li>
-            <li className="view_p_box_menu_item">จำนวนที่ขายได้</li>
-            <li className="view_p_box_menu_item">ยอดขายสินค้า</li>
+            <li className="view_p_box_menu_item active">
+              <Link href={"/admin"}>
+                <a>ยอดขาย</a>
+              </Link>
+            </li>
+            <li className="view_p_box_menu_item">
+              <Link href={"/admin"}>
+                <a>จำนวนที่ขายได้</a>
+              </Link>
+            </li>
+            <li className="view_p_box_menu_item">
+              <Link href={"/admin"}>
+                <a>ยอดขายสินค้า</a>
+              </Link>
+            </li>
           </ul>
 
           <div className="view_p_ranking_graph">
