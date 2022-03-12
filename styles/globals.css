@@ -64,16 +64,13 @@ li {
 .addmin_container {
   max-width: 1200px;
   width: 100%;
-  padding: 20px 20px;
+  padding: 20px 0;
+  margin: 50px auto;
   /* margin-top: 50px; */
-  margin-top: 50px;
-  padding-left: 20px;
+  padding-left: 50px;
   transition: all 0.2s;
 }
-.addmin_container.active {
-  padding-left: 160px;
-  transition: all 0.2s;
-}
+
 .index_banner {
   display: flex;
   justify-content: space-evenly;
@@ -89,6 +86,10 @@ li {
 @media only screen and (max-width: 1300px) {
   .addmin_container {
     margin: 50px 40px;
+  }
+  .addmin_container.active {
+    padding-left: 160px;
+    transition: all 0.2s;
   }
 }
 @media only screen and (max-width: 1024px) {
