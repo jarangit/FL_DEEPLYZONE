@@ -44,7 +44,7 @@ const TakingSales_page = () => {
         </div>
 
         <div className="taking_box_title_R">
-          <p>ช่วงเวลาของข้อมล</p>
+          <p>ช่วงเวลาของข้อมูล</p>
           <div
             className="jr_input_date"
             onClick={() => setopenDatePicker(true)}
@@ -71,7 +71,7 @@ const TakingSales_page = () => {
           <p>รายงาน</p>
         </button>
       </div>
-      <div style={{marginTop: "20px"}} >
+      <div style={{ marginTop: "20px" }}>
         <p>ข้อมูลการติดตาม</p>
         <ColumnHiding />
       </div>

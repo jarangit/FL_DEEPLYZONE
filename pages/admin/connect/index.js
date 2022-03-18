@@ -7,7 +7,7 @@ const ConnectPage = () => {
       <h3>การเชื่อต่อ</h3>
       <div className="connect_nav">
         <ul>
-          <li className="connect_nav_item active ">กาลังเชื่อมต่อ 0</li>
+          <li className="connect_nav_item active ">กาลังเชื่อมต่อ 1</li>
           <li className="connect_nav_item">ถูกระงับ 0</li>
           <li className="connect_nav_item">หมดอายุ 0</li>
           <li className="connect_nav_item">หยุดเชื่อมต่อ 0</li>

@@ -26,7 +26,7 @@ const ProductBooster_page = () => {
         </div>
         <div className="prod_booster_box_title_right">
           <div className="prod_booster_box_title_right_item">
-            <p>ช่วงเวลาของข้อมล</p>
+            <p>ช่วงเวลาของข้อมูล</p>
           </div>
           <div className="prod_booster_box_title_right_item">
             <div className="prod_booster_input_date">

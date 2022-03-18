@@ -61,9 +61,7 @@ const SideBar = ({ data }) => {
                           }`}
                         >
                           <Link href={sub_item.link}>
-                            <a className="sideBar_productBoost">
-                              {sub_item.name}
-                            </a>
+                            <a>{sub_item.name}</a>
                           </Link>
                         </li>
                       ))

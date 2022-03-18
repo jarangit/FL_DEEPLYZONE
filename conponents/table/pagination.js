@@ -6,6 +6,7 @@ const Pagination = ({
   totalPosts,
   paginate,
   current_page,
+  dataSelect,
 }) => {
   const pageNumber = [];
 
@@ -13,13 +14,16 @@ const Pagination = ({
     pageNumber.push(i);
   }
   const totalPage = Math.ceil(totalPosts / postsPerPage);
-  console.log(totalPosts);
-  console.log(pageNumber);
+  console.log(dataSelect);
 
   return (
     <div className="expenses_pagination">
       <div>
-        <button className="jr_but_gray">ลบสินค้า</button>
+        <button
+          className={dataSelect.length !== 0 ? "jr_but_blue" : "jr_but_gray"}
+        >
+          ลบสินค้า
+        </button>
       </div>
       <div className="expenses_pagination_bux_paginate">
         <button

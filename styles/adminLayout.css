@@ -132,6 +132,7 @@
   cursor: pointer;
   position: relative;
   padding: 5px 0;
+  font-size: 14px;
 }
 .sideBar_icon_item {
   padding: 0 3px;
@@ -148,7 +149,7 @@
 .sideBar_menu_item:hover,
 .sideBar_menu_item.active {
   background-color: var(--orange);
-  color: white;
+  /* color: white; */
 }
 .sideBar_menu_item:hover .sideBar_icon_item {
   color: white;
@@ -192,7 +193,6 @@
   z-index: 3;
 }
 
-.sideBar_menu_item:hover,
 .sideBar_menu_item.active .sku_icon::before {
   color: #1093b2;
   background-color: #ffffff;
@@ -209,6 +209,7 @@
   padding: 5px;
   border-radius: 3px;
   z-index: 3;
+  top: 3px;
 }
 
 .space_icon::before {
