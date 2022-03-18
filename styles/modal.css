@@ -1,16 +1,16 @@
 .modal {
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 18; /* Sit on top */
   padding-top: 20%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
-.modal.active{
+.modal.active {
   display: block;
 }
 
@@ -24,22 +24,22 @@
   text-align: center;
 }
 
-.modal-content>p{
+.modal-content > p {
   margin: 20px;
 }
-.modal_box_but{
+.modal_box_but {
   display: flex;
   justify-content: space-evenly;
 }
 
-.but_comfrim{
+.but_comfrim {
   border: none;
   color: white;
   background-color: var(--blue);
   padding: 5px 30px;
 }
 
-.but_cencel{
+.but_cencel {
   border: none;
   background-color: rgb(209, 209, 209);
   padding: 5px 30px;

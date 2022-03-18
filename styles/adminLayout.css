@@ -151,6 +151,10 @@
   background-color: var(--orange);
   /* color: white; */
 }
+.sideBar_menu_item:hover,
+.sideBar_menu_item.active > a > p {
+  color: white;
+}
 .sideBar_menu_item:hover .sideBar_icon_item {
   color: white;
 }
