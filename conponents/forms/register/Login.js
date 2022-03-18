@@ -40,7 +40,7 @@ const LoginForm = () => {
         <div className="login_newUser">
           <strong>
             <a href="/register/signup">
-              <div>เพิ่งเคยใช้งาน Deeply</div>สมัครใหม่
+              <div>เพิ่งเคยใช้งาน DeeplyZone</div>สมัครใหม่
             </a>
           </strong>
         </div>

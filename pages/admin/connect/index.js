@@ -13,7 +13,7 @@ const ConnectPage = () => {
           <li className="connect_nav_item">หยุดเชื่อมต่อ 0</li>
         </ul>
       </div>
-      <div>รายชื่อการเชื่อทต่อ Deeply ไปยัง Data Source</div>
+      <div>รายชื่อการเชื่อมต่อ Deeply ไปยัง Data Source</div>
       <div className="connect_nav2">
         <ul>
           <li className="connect_nav_item">โซเชียลมีเดีย</li>
@@ -50,7 +50,7 @@ const ConnectPage = () => {
                   type={"checkbox"}
                   id="check_toggle"
                 />
-                <label htmlFor="check_toggle">เชื่อต่อ</label>
+                <label htmlFor="check_toggle">เชื่อมต่อ</label>
               </div>
             </td>
             <td>31-12-2022</td>

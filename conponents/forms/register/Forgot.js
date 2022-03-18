@@ -15,7 +15,7 @@ const ForgotForm = () => {
           <h3 className="login_title">ตั้งรหัสผ่านใหม่</h3>
         </div>
         <div className="login_item ">
-          <label>กรุณระบุอีเมล หรือหมายเลขโทรศัพท์ที่คุณใช้ลงทะเบียน</label>
+          <label>กรุณาระบุอีเมล หรือหมายเลขโทรศัพท์ที่คุณใช้ลงทะเบียน</label>
           <input type="text" placeholder="อีเมล/หมายเลขโทรศัพท์" />
         </div>
         <button className="login_but">ตั้งรหัสผ่านใหม่</button>

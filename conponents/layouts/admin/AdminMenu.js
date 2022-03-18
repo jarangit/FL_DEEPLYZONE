@@ -199,7 +199,7 @@ const AdminMenu = () => {
                         className="dropdown_item_icon"
                       />
                     </span>
-                    การเตื่อมต่อ
+                    การเชื่อมต่อ
                   </a>
                 </Link>
               </li>
