@@ -14,11 +14,7 @@ const SideBar = ({ data }) => {
   const ref = useRef(null);
 
   function onClickOpenSideMenu() {
-    if (asPath === "/admin") {
-      setopenSideMenuAdmin(false);
-    } else {
-      setopenSideMenuAdmin(!openSideMenuAdmin);
-    }
+    setopenSideMenuAdmin(!openSideMenuAdmin);
   }
   useOutsideClick(ref, () => {
     if (openSideMenuAdmin) setopenSideMenuAdmin(false);
