@@ -50,7 +50,7 @@ const View_page = () => {
             className="view_p_menu_item"
             onClick={() => setshow_salesChart(!show_salesChart)}
           >
-            <Link href="/admin">
+            <Link href="#">
               <a>ยอดขาย</a>
             </Link>
           </li>
