@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ConnectPage = () => {
   return (
     <div className="connect">
-      <h3>การเชื่อต่อ</h3>
+      <h3>การเชื่อมต่อ</h3>
       <div className="connect_nav">
         <ul>
           <li className="connect_nav_item active ">กาลังเชื่อมต่อ 1</li>
@@ -13,7 +13,7 @@ const ConnectPage = () => {
           <li className="connect_nav_item">หยุดเชื่อมต่อ 0</li>
         </ul>
       </div>
-      <div>รายชื่อการเชื่อมต่อ Deeply ไปยัง Data Source</div>
+      <div>รายชื่อการเชื่อมต่อ DeeplyZone ไปยัง Data Source</div>
       <div className="connect_nav2">
         <ul>
           <li className="connect_nav_item">โซเชียลมีเดีย</li>
