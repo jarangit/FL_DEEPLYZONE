@@ -10,7 +10,7 @@ const SideBar = ({ data }) => {
     useContext(AppProviderContext);
   const [open, setopen] = useState(false);
   const { asPath } = useRouter();
-  console.log(asPath);
+  // console.log(asPath);
   const ref = useRef(null);
 
   function onClickOpenSideMenu() {

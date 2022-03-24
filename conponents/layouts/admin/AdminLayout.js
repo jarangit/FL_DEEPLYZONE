@@ -12,7 +12,7 @@ const AdminLayout = ({ children }) => {
   const { asPath } = useRouter();
   const find = asPath.search("feature");
   const [openSideMenuAdmin] = useContext(AppProviderContext);
-  console.log(openSideMenuAdmin);
+  // console.log(openSideMenuAdmin);
   const [data_side_menu, setdata_side_menu] = useState([]);
   useEffect(() => {
     if (asPath.search("feature") > -1) {

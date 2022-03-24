@@ -5,8 +5,8 @@ import SignupForm from "../conponents/forms/register/Signup";
 import Image from "next/image";
 import { useRouter } from "next/router";
 export default function Home() {
-  const {asPath} = useRouter()
-  console.log(asPath);
+  const { asPath } = useRouter();
+  // console.log(asPath);
   return (
     <div>
       <Head>
@@ -17,7 +17,7 @@ export default function Home() {
 
       <div className="index_banner">
         <div className="index_left">
-          <Image src = "/img/banner.png" alt = "banner" width={500} height={500} />
+          <Image src="/img/banner.png" alt="banner" width={500} height={500} />
           {/* <img
             src="./public/img/banner.png"
             alt=""
@@ -25,10 +25,9 @@ export default function Home() {
           /> */}
         </div>
         <div className="index_right">
-          <LoginForm/>
+          <LoginForm />
           {/* <ForgotForm/> */}
           {/* <SignupForm/> */}
-          
         </div>
       </div>
     </div>

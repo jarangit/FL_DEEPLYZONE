@@ -11,10 +11,10 @@ const TalkingSkuTable = ({ data }) => {
       setIsCheck([]);
     }
   };
-  console.log(isCheck);
+  // console.log(isCheck);
   const handleClick = (e) => {
     const { id, checked } = e.target;
-    console.log(checked);
+    // console.log(checked);
     setIsCheck([...isCheck, id]);
     if (!checked) {
       setIsCheck(isCheck.filter((item) => item !== id));

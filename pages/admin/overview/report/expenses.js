@@ -13,7 +13,7 @@ const Expenses_page = () => {
 
   const [isCheckAll, setIsCheckAll] = useState(false);
   const [isCheck, setIsCheck] = useState([]);
-  console.log({ currP: currentPage });
+  // console.log({ currP: currentPage });
   //Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -46,7 +46,7 @@ const Expenses_page = () => {
     }
   };
 
-  console.log(data);
+  // console.log(data);
   return (
     <div className="expenses_p">
       <p className="expenses_p_title">รายการโฆษณาทั้งหมด</p>

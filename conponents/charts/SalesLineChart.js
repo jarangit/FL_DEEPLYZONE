@@ -49,7 +49,6 @@ export const options = {
   },
 };
 const labels = ["1", "5", "10", "15", "20"];
-console.log(moment().locale("th"));
 export const data = {
   labels,
   datasets: [
@@ -84,7 +83,7 @@ const SalesLineChart = () => {
       <div className="sales_charts_card">
         {fake_data_card_sales_charts &&
           fake_data_card_sales_charts.map((item, key) => (
-            <div  key = {key} className="salse_charts_card_item">
+            <div key={key} className="salse_charts_card_item">
               <p>
                 {item.title}
                 <span className="salse_charts_card_item_icon">

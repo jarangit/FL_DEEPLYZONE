@@ -22,24 +22,20 @@ export const options = {
   },
   scales: {
     y: {
-      grid: {
-      },
+      grid: {},
       // beginAtZero: true,
       grace: "5%",
-      
+
       max: 10,
       grid: {
         zeroLineBorderDashOffset: 9,
         display: false,
       },
     },
-    x: {
-     
-    },
+    x: {},
   },
 };
 const labels = ["หมอน", "กระเป๋าเดินทาง", "หมอนข้าง", "รายการ 4", "รายการ 5"];
-console.log(moment().locale("th"));
 export const data = {
   labels,
   datasets: [

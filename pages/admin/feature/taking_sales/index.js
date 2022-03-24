@@ -18,20 +18,20 @@ const TakingSales_page = () => {
 
   function onChecked(e) {
     if (e) {
-      console.log(e.target.name);
+      // console.log(e.target.name);
       const del = data_product_taking.forEach((ob) => {
         delete ob[e.target.name];
       });
       setdata(del);
     }
-    console.log(data);
+    // console.log(data);
   }
 
   // useEffect(() => {
   //   setdata(data_product_taking);
   // }, [data])
 
-  console.log(data);
+  // console.log(data);
   useOutsideClick(ref, () => {
     if (openDatePicker) setopenDatePicker(false);
   });

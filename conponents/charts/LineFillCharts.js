@@ -14,7 +14,7 @@ import Chart from "chart.js/auto";
 import moment from "moment";
 export const options = {
   responsive: true,
-  
+
   radius: 0,
 
   plugins: {
@@ -39,7 +39,6 @@ export const options = {
   },
 };
 const labels = moment.months();
-console.log(moment().locale("th"));
 export const data = {
   labels,
   datasets: [

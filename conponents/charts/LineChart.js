@@ -25,23 +25,20 @@ export const options = {
       grace: "5%",
       ticks: {
         display: false,
-
       },
       max: 10,
       grid: {
-        zeroLineBorderDashOffset: 9
-      }
+        zeroLineBorderDashOffset: 9,
+      },
     },
     x: {
       grid: {
-        display: false
+        display: false,
       },
-      
     },
   },
 };
 const labels = moment.months();
-console.log(moment().locale("th"));
 export const data = {
   labels,
   datasets: [
@@ -63,7 +60,7 @@ export const data = {
       label: "Dataset 3",
       data: [1, 4, 3, 5, 3, 7],
       borderColor: "rgb(140, 82, 255)",
-      backgroundColor:  "rgb(140, 82, 255)",
+      backgroundColor: "rgb(140, 82, 255)",
       tension: 0.3,
     },
   ],
@@ -72,7 +69,7 @@ export const data = {
 const LineChart = () => {
   return (
     <div>
-      <Line options={options} data={data} height = {50} />
+      <Line options={options} data={data} height={50} />
     </div>
   );
 };

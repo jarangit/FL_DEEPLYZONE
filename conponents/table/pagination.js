@@ -14,7 +14,7 @@ const Pagination = ({
     pageNumber.push(i);
   }
   const totalPage = Math.ceil(totalPosts / postsPerPage);
-  console.log(dataSelect);
+  // console.log(dataSelect);
 
   return (
     <div className="expenses_pagination">
